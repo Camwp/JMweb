@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JmCivilEng Portfolio</title>
+    <link rel="stylesheet" href="styles/common-styles.css">
+    <link rel="stylesheet" href="styles/portfolio-styles.css">
+</head>
+
+<body>
+    <header>
+        <section class="navsec">
+            <div>
+                <img src="images/logo-icon.png" alt="JmCivilEng Logo" height="100" class="iconlogo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#portfolio" class="active">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#work">Work with Us</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="menu-toggle" onclick="toggleNav()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </header>
+
+    <div id="portfolio">
+        <div class="portfolio-categories">
+            <ul>
+                <li><a href="#" onclick="loadProjects('automotive')">Automotive/Fuel</a></li>
+                <li><a href="#" onclick="loadProjects('multi-family')">Multi-Family/Residential</a></li>
+                <li><a href="#" onclick="loadProjects('medical')">Medical/Office/Education/Retail</a></li>
+                <li><a href="#" onclick="loadProjects('restaurants')">Restaurants</a></li>
+                <!-- Add more top categories as needed -->
+            </ul>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="project-list">
+                <h3>Completed Projects</h3>
+                <ul id="project-list-container">
+                    <!-- Project list dynamically populated based on the selected category -->
+                </ul>
+            </div>
+
+            <div class="project-details" id="project-details-container">
+                <!-- Project details dynamically populated based on the selected project -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 JmCivilEng. All rights reserved.
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+    <script>
+        // Sample data structure for projects
+        const projectsData = {
+            'automotive': ['Project 1', 'Project 2', 'Project 3'],
+            'multi-family': ['Project 4', 'Project 5', 'Project 6'],
+            'medical': ['Project 7', 'Project 8', 'Project 9'],
+            'restaurants': ['Project 10', 'Project 11', 'Project 12'],
+            // Add more projects as needed
+        };
+
+        // Function to load projects for a specific category
+        function loadProjects(category) {
+            const projectListContainer = document.getElementById('project-list-container');
+            const projects = projectsData[category];
+
+            // Dynamically populate the project list
+            projectListContainer.innerHTML = '';
+            const ul = document.createElement('ul');
+            projects.forEach(project => {
+                const li = document.createElement('li');
+                li.innerHTML = `<a href="#" onclick="loadProjectDetails('${category}', '${project}')">${project}</a>`;
+                ul.appendChild(li);
+            });
+            projectListContainer.appendChild(ul);
+
+            // Clear the project details when a new category is selected
+            document.getElementById('project-details-container').innerHTML = '';
+        }
+
+        // Function to load project details for a specific project
+        function loadProjectDetails(category, projectName) {
+            const projectDetailsContainer = document.getElementById('project-details-container');
+
+            // Sample data structure for project details (images)
+            const projectDetailsData = {
+                'Project 1': ['images/project1_image1.jpg', 'images/project1_image2.jpg'],
+                'Project 2': ['images/project2_image1.jpg', 'images/project2_image2.jpg'],
+                'Project 3': ['images/project3_image1.jpg', 'images/project3_image2.jpg'],
+                // Add more project details as needed
+            };
+
+            const projectImages = projectDetailsData[projectName];
+
+            // Dynamically populate the project details with images
+            projectDetailsContainer.innerHTML = `<h3>${projectName} Details</h3>`;
+            const imageGallery = document.createElement('div');
+            imageGallery.className = 'project-gallery';
+            projectImages.forEach(image => {
+                const img = document.createElement('img');
+                img.src = image;
+                img.alt = `${projectName} Image`;
+                imageGallery.appendChild(img);
+            });
+            projectDetailsContainer.appendChild(imageGallery);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+/* Portfolio Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column; /* Display children elements in a column */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-categories {
+    display: flex; /* Display categories horizontally */
+    justify-content: space-around; /* Evenly distribute categories */
+    padding: 20px;
+    margin-top: 15%;
+    position: relative;
+    z-index: 1; /* Set a higher z-index to be above the header */
+}
+
+.portfolio-categories ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+	
+}
+
+.portfolio-categories li {
+	margin: 10px;
+    
+    padding: 5px;
+}
+
+.portfolio-categories a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-categories a:hover {
+    background-color: #eee;
+}
+
+.portfolio-content {
+    flex: 1; /* Adjust flex property to allow the content to take available space */
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+
+/* ... rest of your styles ... */
+
+.project-list {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.project-list h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.project-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-list a:hover {
+    background-color: #eee;
+}
+
+.project-details {
+    max-width: 600px;
+}
+
+.project-details h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
