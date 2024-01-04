@@ -6,9 +6,12 @@ function toggleNav() {
 
 // Add this to your existing JavaScript code
 
+// Update scripts.js
+
 let currentImageIndex = 0;
 const totalImages = document.querySelectorAll('.mainimg').length;
 const carousel = document.getElementById('imageCarousel');
+const imageWidth = document.querySelector('.mainimg').clientWidth; // Get the width of a single image
 
 function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % totalImages;
@@ -16,24 +19,34 @@ function nextImage() {
 }
 
 function updateCarousel() {
-    const translateValue = -currentImageIndex * 100;
-    carousel.style.transform = `translateX(${translateValue}%)`;
+    const translateValue = -currentImageIndex * imageWidth;
+    carousel.style.transform = `translateX(${translateValue}px)`;
 }
+
+// Rest of your code...
+
+
+// Add any additional logic as needed
+
 
 // Change images every 3 seconds (adjust as needed)
 setInterval(nextImage, 8000);
 
 
-// Add this to your existing JavaScript code
+// Shrink the NAV on scroll
 
 document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('header');
+    var header_icon = document.querySelector(".iconlogo");
 
     window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {
             header.classList.add('nav-shrink');
+            header_icon.style.height = "50px";
         } else {
             header.classList.remove('nav-shrink');
+            header_icon.style.height = "100px";
+            header_icon.style.transition = "height 0.3s ease-in-out";
         }
     });
 });
