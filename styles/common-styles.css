@@ -1,5 +1,10 @@
 /* CSS Document */
 
+@font-face {
+    font-family: Arkhip;
+    src: url(/fonts/Arkhip_font.ttf);
+  }
+
 /* Common Styles */
 
 body {
@@ -12,6 +17,7 @@ body {
 }
 
 header {
+    font-family: Arkhip;
     position: fixed;
     width: 100%;
     background: #ffffff;
@@ -54,13 +60,17 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px;
+    margin-right: 0px;
+    border-right: 1px solid #202020;
+}
+nav li:last-child {
+    border-right: none;
 }
 
 nav a {
     text-decoration: none;
     /* Remove underline */
-    border-width: 1px;
+    border-width: 0px;
     border-top-style: solid;
     padding: 12px;
     color: #050505;
@@ -82,6 +92,7 @@ nav a.active {
     /* Add additional styles as needed */
 }
 
+
 .iconlogo {
     margin-left: 10px;
 }
@@ -96,9 +107,19 @@ nav a.active {
 .carousel {
     display: flex;
     width: 400%; /* Adjust the width based on the number of images */
-    transition: transform 1s ease-in-out;
     height: 100%; /* Make sure the carousel takes the full height of the container */
 }
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 
 .header-text {
     position: absolute;
@@ -107,20 +128,22 @@ nav a.active {
     transform: translate(-50%, -50%);
     z-index: 3; /* Ensure it's on top of the carousel */
     text-align: center; /* Center the text horizontally */
-    
+    font-family: Arkhip;
 }
 
 .header-text h1 {
     color: #fff; /* Set the text color */
     font-size: 44px; /* Adjust the font size as needed */
-    text-shadow: 1px 1px 5px #000;
+    text-shadow: 1px 1px 8px #000;
 }
 
 .mainimg {
-    width: 100%; /* Set each image to take up 25% of the width */
-    height: 100%; /* Take the full height of the container */
-    object-fit: cover; /* Cover the container with the image */
+    width: 30%;
+    
+    object-fit: cover;
+    object-position: center;
 }
+
 .mainimgborder {
     position: absolute;
     top: 0;
@@ -181,7 +204,7 @@ footer {
         /* Adjust to push it below the header */
         left: 0;
         right: 0;
-        background: #333;
+        background: #ffffff;
         overflow: hidden;
         visibility: hidden;
         transform: translateY(-100%);
@@ -213,11 +236,12 @@ footer {
 
     nav li {
         margin-bottom: 10px;
+        border-right: none;
     }
 
     nav a {
         text-decoration: none;
-        color: #fff;
+        color: #202020;
         font-size: 18px;
         transition: color 0.3s;
     }
@@ -238,7 +262,7 @@ footer {
         padding: 1px;
         width: 30px;
         height: 3px;
-        background-color: #fff;
+        background-color: #202020;
         margin: 6px 0;
         transition: 0.4s ease-in-out;
     }

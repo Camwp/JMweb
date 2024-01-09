@@ -5,32 +5,38 @@ function toggleNav() {
 }
 
 // Add this to your existing JavaScript code
-
-// Update scripts.js
-
 let currentImageIndex = 0;
 const totalImages = document.querySelectorAll('.mainimg').length;
-const carousel = document.getElementById('imageCarousel');
-const imageWidth = document.querySelector('.mainimg').clientWidth; // Get the width of a single image
+const images = document.querySelectorAll('.mainimg');
 
-function nextImage() {
-    currentImageIndex = (currentImageIndex + 1) % totalImages;
-    updateCarousel();
+function showSlides() {
+    images[currentImageIndex].classList.remove('fadeOut');
+    images[currentImageIndex].classList.add('fadeIn');
+
+    setTimeout(() => {
+        images[currentImageIndex].classList.remove('fadeIn');
+        images[currentImageIndex].classList.add('fadeOut');
+
+        setTimeout(() => {
+            images[currentImageIndex].style.display = "none";
+            
+            currentImageIndex++;
+            if (currentImageIndex >= totalImages) {
+                currentImageIndex = 0;
+            }
+
+            images[currentImageIndex].style.display = "block";
+
+            setTimeout(() => {
+                showSlides();
+            }, 200); // Wait for the transition to complete before changing image
+        }, 800); // Transition duration
+    }, 6000); // Change image every 2 seconds
 }
 
-function updateCarousel() {
-    const translateValue = -currentImageIndex * imageWidth;
-    carousel.style.transform = `translateX(${translateValue}px)`;
-}
+// Initial setup
+showSlides();
 
-// Rest of your code...
-
-
-// Add any additional logic as needed
-
-
-// Change images every 3 seconds (adjust as needed)
-setInterval(nextImage, 8000);
 
 
 // Shrink the NAV on scroll
