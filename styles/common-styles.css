@@ -42,7 +42,7 @@ header.nav-shrink {
     padding: 1em;
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    margin: 0 20px;
 }
 
 nav {
