@@ -67,7 +67,7 @@ nav a:hover{
     color:#5595b3
 }
 nav a.active{
-    color:#5aaad1
+    color:#25688a
 }
 .iconlogo{
     margin-left:10px
@@ -75,7 +75,7 @@ nav a.active{
 .carousel-container{
     max-width:100%;
     margin:0 auto;
-    height:70vh
+    height:100vh;
 }
 .carousel{
     display:flex;
@@ -107,15 +107,43 @@ nav a.active{
 }
 .mainimg{
     width:100%;
-    height:auto;
     object-fit:cover;
-    object-position:center;
     display:none
 }
-section{
+
+/* SECTIONS */
+section #home{
     padding:0;
     text-align:center
 }
+
+/* SECTION 1*/
+#section1 {
+    background-color: white;
+    height: 20vh;
+    padding: 1vh 20vw;
+    margin: 10px 0;
+}
+#section2 {
+    background-color: #3d728c;
+    height: 20vh;
+    padding: 1vh 20vw;
+    margin: 10px 0;
+}
+#section3 {
+    background-color: white;
+    height: 20vh;
+    padding: 1vh 20vw;
+    margin: 10px 0;
+}
+#section4 {
+    background-color: #3d728c;
+    height: 20vh;
+    padding: 1vh 20vw;
+    margin: 10px 0;
+}
+
+/* FOOTER */
 footer{
     background:#333;
     color:#fff;
@@ -125,7 +153,7 @@ footer{
 }
 
 
-
+/* MOBILE SCREEN AND 768px<*/
 @media only screen and (max-width:768px){
     .navsec{
         text-align:center;
