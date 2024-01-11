@@ -1,329 +1,240 @@
-/* CSS Document */
 
-@font-face {
-    font-family: 'Arkhip';
-    src: url('/fonts/Arkhip_font.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-/* Common Styles */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    transition: margin 0.3s ease-in-out;
-    /* Add easing to the body transition */
-    scroll-behavior: smooth;
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    transition:margin .3s ease-in-out;
+    scroll-behavior:smooth
 }
-
-header {
-    font-family: "Arkhip";
-    position: fixed;
-    width: 100%;
-    background: #ffffff;
+header{
+    font-family: 'Chakra Petch', Arial;
+    font-weight: 525;
+    position:fixed;
+    width:100%;
+    background:#fff;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    transition:height .3s ease-in-out;
+    height:100px
+}
+header.nav-shrink{
+    height:65px
+}
+.navsec{
+    text-align:center;
+    padding:1em;
+    display:flex;
+    width:100%;
+    margin:0 20px
+}
+nav{
+    display:flex;
+    align-items:center;
+    margin-left:auto;
+    max-width:1000px
+}
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex
+}
+nav li{
+    margin-right:10px;
+    display:flex;
+    align-items:center;
+    border-right:1px solid #202020;
+    height:10px;
+    padding-right:10px
+}
+nav li:last-child{
+    border-right:0
+}
+nav a{
+    text-decoration:none;
+    border-width:0;
+    border-top-style:solid;
+    padding:12px;
+    color:#050505;
+    font-size:18px;
+    transition:color .3s;
+    align-items:center
+}
+nav a:hover{
+    color:#5595b3
+}
+nav a.active{
+    color:#5aaad1
+}
+.iconlogo{
+    margin-left:10px
+}
+.carousel-container{
+    max-width:100%;
+    margin:0 auto;
+    height:70vh
+}
+.carousel{
+    display:flex;
+    width:100%;
+    height:100%
+}
+.fadeIn{
+    opacity:1;
+    transition:opacity 1s ease-in-out
+}
+.fadeOut{
+    opacity:0;
+    transition:opacity 1s ease-in-out
+}
+.header-text{
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:3;
+    text-align:center;
+    font-family:'Chakra Petch', Arial;
     
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    transition: height 0.3s ease-in-out;
-    height: 100px;
 }
-
-header.nav-shrink {
-    height: 65px;
+.header-text h1{
+    color:#fff;
+    font-size:44px;
+    text-shadow:1px 1px 8px #000
 }
-
-.navsec {
-    text-align: center;
-    padding: 1em;
-    display: flex;
-    width: 100%;
-    margin: 0 20px;
+.mainimg{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    object-position:center;
+    display:none
 }
-
-nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    max-width: 1000px;
+section{
+    padding:0;
+    text-align:center
 }
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin-right: 10px; /* Add some margin between list items */
-    display: flex; /* Add display flex */
-    align-items: center; /* Center items vertically */
-    border-right: 1px solid #202020;
-    height: 10px; /* Set the height of the right border */
-    padding-right: 10px; /* Add padding to create space between text and divider */
-}
-
-nav li:last-child {
-    border-right: none;
-}
-
-nav a {
-    text-decoration: none;
-    /* Remove underline */
-    border-width: 0px;
-    border-top-style: solid;
-    padding: 12px;
-    color: #050505;
-    /* Set link color */
-    font-size: 18px;
-    /* Adjust font size as needed */
-    transition: color 0.3s;
-    /* Add smooth transition for better user experience */
-    align-items: center;
-    
-}
-
-nav a:hover {
-    color: #5595B3;
-    /* Change color on hover */
-}
-
-nav a.active {
-    color: #5AAAD1;
-    /* Change color for active state */
-    /* Add additional styles as needed */
+footer{
+    background:#333;
+    color:#fff;
+    text-align:center;
+    padding:1em;
+    position:relative
 }
 
 
-.iconlogo {
-    margin-left: 10px;
-}
 
-.carousel-container {
-    overflow: hidden;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 70vh; /* Set the container height */
-}
-
-.carousel {
-    display: flex;
-    width: 400%; /* Adjust the width based on the number of images */
-    height: 100%; /* Make sure the carousel takes the full height of the container */
-}
-
-.fadeIn {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-
-.fadeOut {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-
-.header-text {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3; /* Ensure it's on top of the carousel */
-    text-align: center; /* Center the text horizontally */
-    font-family: Arkhip;
-}
-
-.header-text h1 {
-    color: #fff; /* Set the text color */
-    font-size: 44px; /* Adjust the font size as needed */
-    text-shadow: 1px 1px 8px #000;
-}
-
-.mainimg {
-    width: 30%;
-    
-    object-fit: cover;
-    object-position: center;
-}
-
-.mainimgborder {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-right: solid 170px white;
-    height: 100%;
-    max-height: 70%; /* Take the full height of the container */
-    z-index: 2; /* Ensure it's on top of the carousel images */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    max-width: 100%; /* Ensure it doesn't overflow the container */
-}
-
-
-section {
-    padding: 0px;
-    text-align: center;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    position: relative;
-}
-
-/* Mobile Styles */
-
-@media only screen and (max-width: 1000px) {
-    .navsec {
-        text-align: center;
-        padding: 1em;
-        display: flex;
-        justify-content: space-between;
-        /* Adjust as needed */
-        align-items: center;
+@media only screen and (max-width:768px){
+    .navsec{
+        text-align:center;
+        padding:1em;
+        display:flex;
+        justify-content:space-between;
+        align-items:center
     }
-
-    .iconlogo {
-        margin: 0 auto;
-        /* Center the logo icon */
+    .iconlogo{
+        margin:0 auto
     }
-
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        margin-right: 15px;
-        /* Adjust margin as needed for spacing */
+    .menu-toggle{
+        display:block;
+        cursor:pointer;
+        margin-right:15px
     }
-
-    nav {
-        display: none;
-        opacity: 0;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 100%;
-        /* Adjust to push it below the header */
-        left: 0;
-        right: 0;
-        background: #ffffff;
-        overflow: hidden;
-        visibility: hidden;
-        transform: translateY(-100%);
-        transition: opacity .2s ease-in-out, transform 1s ease-in-out, visibility .2s ease-in-out;
-        text-align: center;
-        /* Center the text inside nav */
+    nav{
+        display:none;
+        opacity:0;
+        flex-direction:column;
+        align-items:center;
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background:#fff;
+        overflow:hidden;
+        visibility:hidden;
+        transform:translateY(-100%);
+        transition:opacity .2s ease-in-out,transform 1s ease-in-out,visibility .2s ease-in-out;
+        text-align:center
     }
-
-    nav.active {
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-        /* Show the nav */
-        transform: translateY(0);
+    nav.active{
+        display:flex;
+        opacity:1;
+        visibility:visible;
+        transform:translateY(0)
     }
-
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* Center the content horizontally inside nav */
-        text-align: center;
-        /* Center the text inside nav */
-        margin-left: 20px;
+    nav ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        margin-left:20px
     }
-
-    nav li {
-        margin-bottom: 10px;
-        border-right: none;
+    nav li{
+        margin-bottom:10px;
+        border-right:0
     }
-
-    nav a {
-        text-decoration: none;
-        color: #202020;
-        font-size: 18px;
-        transition: color 0.3s;
+    nav a{
+        text-decoration:none;
+        color:#202020;
+        font-size:18px;
+        transition:color .3s
     }
-
-    .menu-toggle {
-        display: block;
-        position: absolute;
-        left: 15px;
-        cursor: pointer;
-        top: 50%;
-        /* Center the menu toggle vertically */
-        transform: translateY(-50%);
-        /* Adjust to vertically center the menu toggle */
+    .menu-toggle{
+        display:block;
+        position:absolute;
+        left:15px;
+        cursor:pointer;
+        top:50%;
+        transform:translateY(-50%)
     }
-
-
-    .menu-icon {
-        padding: 1px;
-        width: 30px;
-        height: 3px;
-        background-color: #202020;
-        margin: 6px 0;
-        transition: 0.4s ease-in-out;
+    .menu-icon{
+        padding:1px;
+        width:30px;
+        height:3px;
+        background-color:#202020;
+        margin:6px 0;
+        transition:.4s ease-in-out
     }
-
-    header img {
-        display: block;
-        margin: 0 auto;
+    header img{
+        display:block;
+        margin:0 auto
     }
-
-    .navsec {
-        display: flex;
-        justify-content: center;
-        /* Center the content horizontally */
-        align-items: center;
-        /* Center the content vertically */
-        text-align: center;
-        /* Center the text inside .navsec */
+    .navsec{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center
     }
-
-    .iconlogo {
-        margin-right: 10px;
-        /* Adjust as needed for spacing between logo and navigation */
+    .iconlogo{
+        margin-right:10px
     }
-
-    section {
-        padding: 20px;
-        text-align: center;
+    section{
+        padding:20px;
+        text-align:center
     }
 }
-
-/* JS to toggle the class based on screen width */
-
-.mobile-nav-active nav {
-    /*display: none;*/
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+.mobile-nav-active nav{
+    opacity:0;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease-in-out,opacity .3s ease-in-out
 }
-
-.mobile-nav-active nav.active {
-    /*display: flex;*/
-    opacity: 1;
-    max-height: 500px;
+.mobile-nav-active nav.active{
+    opacity:1;
+    max-height:500px
 }
-
-.mobile-nav-active nav.active ul {
-    flex-direction: column;
+.mobile-nav-active nav.active ul{
+    flex-direction:column
 }
-
-.mobile-nav-active .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 15px;
-    cursor: pointer;
+.mobile-nav-active .menu-toggle{
+    display:block;
+    position:absolute;
+    top:50px;
+    left:15px;
+    cursor:pointer
 }
