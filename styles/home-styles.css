@@ -24,7 +24,7 @@
     transform:translate(-50%,-50%);
     z-index:3;
     text-align:center;
-    font-family:'Chakra Petch', Arial;
+    font-family: Arial;
     
 }
 .carousel-text h1{
@@ -45,13 +45,98 @@
     text-align:center
 }
 
-/* SECTION 1*/
+/* SECTION 1 */
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:900');
 #homeSection1 {
-    background-color: white;
-    height: 20vh;
-    padding: 1vh 20vw;
-    margin: 10px 0;
+  align-items: center;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  font-family: sans-serif;
+  margin: 10px 0;
+
 }
+@media (max-width: 767px) {
+  #homeSection1 {
+    display: block;
+    height: auto;
+  }
+}
+.card {
+  background: #3d728c;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  height: 300px;
+  margin: 20px;
+  padding: 0 20px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.025);
+  text-align: center;
+  transition: height 1000ms;
+  width: 260px;
+}
+@media (max-width: 767px) {
+  .card {
+    left: calc(50% - 20px);
+    transform: translateX(-50%);
+  }
+}
+.card.expanded {
+  height: 400px;
+}
+.label {
+  /*margin-top: 30px;*/
+  transform: translateY(10px);
+  transition: transform 1000ms;
+}
+.card.expanded .label {
+  transform: translateY(0);
+}
+.text1 {
+  clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  transition: clip-path 1000ms;
+  margin-top: 30px;
+}
+.card.expanded .text1 {
+  clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+}
+.text-content {
+  transform: translateY(-160px);
+  transition: transform 1000ms;
+}
+.card.expanded .text-content {
+  transform: translateY(-15px);
+  padding-top: 30px;
+}
+.chevron {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 15px);
+  transform-origin: 50%;
+  transform: rotate(180deg);
+  transition: transform 1000ms;
+}
+.card.expanded .chevron {
+  transform: rotate(0deg);
+}
+.title {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 900;
+  margin: 20px 0 12px;
+}
+.body-text {
+  padding: 0 20px;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+
+
 #homeSection2 {
     background-color: #3d728c;
     height: 20vh;
