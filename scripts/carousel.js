@@ -8,9 +8,9 @@ function showSlides() {
         images[currentImageIndex].classList.remove("fadeIn"), images[currentImageIndex].classList.add("fadeOut"), setTimeout((() => {
             images[currentImageIndex].style.display = "none", currentImageIndex++, currentImageIndex >= totalImages && (currentImageIndex = 0), images[currentImageIndex].style.display = "block", setTimeout((() => {
                 showSlides();
-            }), 200) // Wait for the transition to complete before changing image
-        }), 800) // Transition duration
-    }), 6000) // Change image every 6 seconds
+            }), 100) // Wait for the transition to complete before changing image
+        }), 500) // Transition duration
+    }), 5000) // Change image every 6 seconds
 }
 
 // Initial setup
