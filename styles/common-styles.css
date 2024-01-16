@@ -19,7 +19,7 @@ body{
     scroll-behavior:smooth
 }
 header{
-    font-family: 'Poppins', Arial;
+    font-family: var(--primary-font), Arial;
     font-weight: 525;
     position:fixed;
     width:100%;
