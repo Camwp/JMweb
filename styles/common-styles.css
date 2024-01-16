@@ -3,11 +3,12 @@
 
 :root {
     --primary-font: 'Poppins';
-    --header-color: ;
     
-    --primary-color: white ;
-    --secondary-color: #3d728c ;
-    --highlight-color: lightgray;
+    /* COLORS */
+    --primary-color: white ; /* WHITE*/
+    --secondary-color: #3d728c ; /* BLUE */
+    --highlight-color: lightgray; /* LIGHT GREY */
+    --header-color: #37B0C9; /* LIGHT BLUE */
 }
 
 body{
@@ -85,19 +86,6 @@ nav a.active{
 }
 
 
-
-
-
-/* SECTIONS BEGIN */
-#sectionHeader{
-    text-align:center;
-    padding-top: 125px;
-    height: 300px;
-    font-family: 'Poppins', Arial;
-    font-size: 35px;
-    background-color: green;
-}
-
 /* SECTION 1*/
 #section1 {
     background-color: var(--primary-color);
@@ -146,7 +134,7 @@ footer{
         overflow:hidden;
         visibility:hidden;
         transform:translateY(-100%);
-        transition:opacity .2s ease-in-out,transform 1s ease-in-out,visibility .2s ease-in-out;
+        transition:opacity 5.8s ease-in-out,transform 10s ease-in-out,visibility 5.8s ease-in-out;
         text-align:center
     }
     nav.active{
@@ -158,7 +146,7 @@ footer{
     nav ul{
         list-style:none;
         margin:0;
-        padding:0;
+        padding:10px 0;
         display:flex;
         flex-direction:column;
         align-items:center;
@@ -167,13 +155,15 @@ footer{
     }
     nav li{
         margin-bottom:10px;
-        border-right:0
+        border-right:0;
+        padding: 5px 0;
     }
     nav a{
         text-decoration:none;
         color:#202020;
         font-size:18px;
-        transition:color .3s
+        transition:color .3s;
+        
     }
     .menu-toggle{
         display:block;
@@ -213,7 +203,7 @@ footer{
     opacity:0;
     max-height:0;
     overflow:hidden;
-    transition:max-height .3s ease-in-out,opacity .3s ease-in-out
+    transition:max-height .3s ease-in-out,opacity 5.3s ease-in-out
 }
 .mobile-nav-active nav.active{
     opacity:1;
