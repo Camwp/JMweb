@@ -86,14 +86,6 @@ nav a.active{
 }
 
 
-/* SECTION 1*/
-#section1 {
-    background-color: var(--primary-color);
-    height: 20vh;
-    padding: 1vh 20vw;
-    margin: 10px 0;
-}
-
 /* FOOTER */
 footer{
     background:#333;
