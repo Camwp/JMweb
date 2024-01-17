@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* COLOR PALETTE: https://coolors.co/ffffff-3d728c-d3d3d3-37b0c9-050505 */
 
 :root {
     --primary-font: 'Poppins';
@@ -8,7 +8,7 @@
     --primary-color: white ; /* WHITE*/
     --secondary-color: #3d728c ; /* BLUE */
     --highlight-color: lightgray; /* LIGHT GREY */
-    --header-color: #37B0C9; /* LIGHT BLUE */
+    --header-color: #37B0C9; /* MOON STONE */
 }
 
 body{
@@ -70,16 +70,16 @@ nav a{
     border-width:0;
     border-top-style:solid;
     padding:12px;
-    color:#050505;
+    color:#25688a;
     font-size:18px;
     transition:color .3s;
     align-items:center
 }
 nav a:hover{
-    color:#5595b3
+    color: #5595b3 ;
 }
 nav a.active{
-    color:#25688a
+    color:#050505;
 }
 .iconlogo{
     margin-left:10px
