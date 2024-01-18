@@ -7,16 +7,19 @@ body {
 #portfolioHeader {
     text-align:center;
     padding-top: 125px;
-    height: 0px;
+    height: 50px;
     font-family: 'Chakra Petch', Arial;
     font-size: 35px;
-    background-color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .contact-form {
     max-width: 700px;
     margin: 15vh auto;
-
+    text-align: left;
+    font-weight: 600;
+    font-family: var(--primary-font);
     padding: 2em;
     background-color: #fff;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/

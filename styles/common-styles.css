@@ -131,27 +131,27 @@ footer{
         cursor:pointer;
         margin-right:15px
     }
-    nav{
-        display:none;
-        opacity:0;
-        flex-direction:column;
-        align-items:center;
-        position:absolute;
-        top:100%;
-        left:0;
-        right:0;
-        background:#fff;
-        overflow:hidden;
-        visibility:hidden;
-        transform:translateY(-100%);
-        transition:opacity 5.8s ease-in-out,transform 10s ease-in-out,visibility 5.8s ease-in-out;
-        text-align:center
+    nav {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        overflow: hidden;
+        transform: translateY(-10%);
+        text-align: center;
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, visibility 0.8s ease-in-out;
+        z-index: 1; /* Place the nav behind the header */
     }
-    nav.active{
-        display:flex;
-        opacity:1;
-        visibility:visible;
-        transform:translateY(0)
+    nav.active {
+        z-index: -1;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
     nav ul{
         list-style:none;
@@ -170,7 +170,7 @@ footer{
     }
     nav a{
         text-decoration:none;
-        color:#202020;
+        
         font-size:18px;
         transition:color .3s;
         
@@ -209,23 +209,4 @@ footer{
         text-align:center
     }
 }
-.mobile-nav-active nav{
-    opacity:0;
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .3s ease-in-out,opacity 5.3s ease-in-out
-}
-.mobile-nav-active nav.active{
-    opacity:1;
-    max-height:500px
-}
-.mobile-nav-active nav.active ul{
-    flex-direction:column
-}
-.mobile-nav-active .menu-toggle{
-    display:block;
-    position:absolute;
-    top:50px;
-    left:15px;
-    cursor:pointer
-}
+
