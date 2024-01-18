@@ -7,7 +7,7 @@
     /* COLORS */
     --primary-color: white ; /* WHITE*/
     --secondary-color: #3d728c ; /* BLUE */
-    --highlight-color: lightgray; /* LIGHT GREY */
+    --highlight-color: #F3EFEF; /* LIGHT GREY */
     --header-color: #37B0C9; /* MOON STONE */
 }
 
@@ -83,6 +83,24 @@ nav a.active{
 }
 .iconlogo{
     margin-left:10px
+}
+
+/* SECTION 5  - CONTACT US */
+#Section5 {
+    background-color: var(--highlight-color);
+    height: 150px;
+    padding: 1vh 20vw;
+    text-align: center;
+}
+#Section5 button {
+    padding: 5px 20px;
+    background-color: #3d728c;
+    border-width: 0px;
+}
+#Section5 button p {
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
 }
 
 

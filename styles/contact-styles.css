@@ -1,0 +1,119 @@
+/* Portfolio Styles */
+
+body {
+    background: var(--highlight-color) /*url('/images/home/carouselborder1.png') center top no-repeat*/;
+    background-size:contain;
+}
+#portfolioHeader {
+    text-align:center;
+    padding-top: 125px;
+    height: 0px;
+    font-family: 'Chakra Petch', Arial;
+    font-size: 35px;
+    background-color: white;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 15vh auto;
+
+    padding: 2em;
+    background-color: #fff;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    background-color: var(--highlight-color);
+    
+}
+
+form {
+    flex: 1; /* Take up all available width on the left */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Ensure the form content is above the overlay */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+/* Adjust the positioning of the email and phone fields */
+#namelabel,
+#name,
+#companylabel,
+#company,
+#emaillabel,
+#email {
+    grid-column: span 2;
+}
+#namelabel {
+    grid-row-start: 1;
+}
+#name {
+    grid-row-start: 2;
+}
+#emaillabel {
+    grid-row-start: 3;
+}
+#email {
+    grid-row-start: 4;
+}
+#companylabel {
+    grid-row-start: 5;
+}
+#company {
+    grid-row-start: 6;
+}
+#phonelabel {
+    grid-column: span 1;
+    grid-row-start: 3;
+}
+#phone {
+    grid-column: span 1;
+    grid-row-start: 4;
+}
+#messagelabel {
+    grid-row-start: 7;
+}
+#message {
+    grid-column: span 2;
+    grid-row-start: 8;
+}
+.g-recaptcha {
+    grid-row-start: 9;
+}
+
+
+.submit_button {
+    grid-column: span 0.5; /* Span the full width of the form */
+    background-color: #333;
+    color: #fff;
+    padding: 1em 1em;
+    border: none;
+    cursor: pointer;
+    grid-row-start: 10;
+    margin-right: 75px;
+}
+
+.submit_button:hover {
+    background-color: #555;
+}
+#contact-extra {
+    background-color: var(--primary-color);
+    margin: auto;
+    padding: 10vh;
+}
+
+#Section5 {
+    display:none;
+}

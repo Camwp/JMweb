@@ -10,7 +10,7 @@
     <title>JM Civil Engineering | Portfolio</title>
     <meta name="description" content="JM Civil Engineering | Portfolio">
 	<link rel="stylesheet" href="styles/common-styles.css">
-    <link rel="stylesheet" href="styles/portfolio-styles.css">
+    <link rel="stylesheet" href="styles/contact-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -26,10 +26,10 @@
         	<nav>
             	<ul >
                 	<li><a href="index.html">HOME</a></li>
-                	<li><a href="#portfolio" class="active">PORTFOLIO</a></li>
+                	<li><a href="portfolio.html" >PORTFOLIO</a></li>
                 	<li><a href="#services">SERVICES</a></li>
                     <li><a href="#work">CAREERS</a></li>
-                	<li><a href="contact.html">CONTACT US</a></li>
+                	<li><a href="#contact" class="active">CONTACT US</a></li>
             	</ul>
         	</nav>
 		</section>
@@ -42,20 +42,50 @@
     
     <section id="portfolioHeader">
         <div>
-            <a>Portfolio</a>
+            <!--<a>CONTACT US</a>-->
         </div>
     </section>
 
-    <section id="section1">
-        <!-- Content for section 1 -->
-        <h2>Section 1</h2>
-        <p>Your content goes here.</p>
+    <section class="contact-form">
+        <form action="process_form.php" method="post">
+            <label for="name" idd="namelabel">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" id="emaillabel">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="company" id="companylabel">Company</label>
+            <input type="text" id="company" name="company">
+
+            <label for="phone" id="phonelabel">Phone</label>
+            <input type="phone" id="phone" name="phone" required>
+
+            <label for="message" id="messagelabel">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <!-- Add reCAPTCHA here -->
+            <div class="g-recaptcha" data-sitekey="your_recaptcha_site_key"></div>
+
+            <button type="submit" class="submit_button">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact-extra">
+        <div>
+            <h3>Locations</h3>
+            <p>We have locations throughout the United States.</p>
+        </div>
+        <div>
+            <h3>Careers at JM Civil Engineering</h3>
+            <p>Discover what it's like to work with us.</p>
+        </div>
     </section>
 
     <section id="Section5">
         <h3>Contact us about your next project</h3>
         <button><p>CONTACT US</p></button>
     </section>
+
 
     
     <footer>
