@@ -97,10 +97,11 @@ nav a.active{
     background-color: #3d728c;
     border-width: 0px;
 }
-#Section5 button p {
+#Section5 button a {
     color: white;
     font-size: 16px;
     font-weight: 550;
+    text-decoration: none;
 }
 
 
