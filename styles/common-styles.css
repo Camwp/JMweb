@@ -141,6 +141,7 @@ footer.footer {
 .footer-menu {
     width: 100%;
     text-align: center;
+    
 
     @media (min-width: 768px) {
         width: 33%; /* Adjust the width as needed for larger screens */
