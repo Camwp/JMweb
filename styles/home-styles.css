@@ -135,25 +135,47 @@
 }
 #Section2 h1 {
     color: var(--secondary-color);
-    font-size: 22px;
+    font-size: 26px;
 }
 
 /* SECTION 3 */
 #Section3 {
-    background-color: var(--secondary-color);
-    height: 500px;
+    background-color: var(--highlight-color);
+    height: 250px;
     padding: 1vh 20vw;
     margin: 0px 0;
 }
-#Section3 h2 {
-    color: var(--primary-color);
+#Section3 h1 {
+    color: var(--secondary-color);
+    font-size: 26px;
 }
-
-/* SECTION 4 */
 #Section4 {
     background-color: var(--primary-color);
     height: 250px;
     padding: 1vh 20vw;
+}
+#Section4 h1 {
+    color: var(--secondary-color);
+    font-size: 26px;
+}
+/* SECTION 4 */
+#Section5 {
+    background-color: var(--secondary-color);
+    height: 500px;
+    padding: 1vh 20vw;
+}
+#Section5 h1 {
+    color: var(--primary-color);
+    font-size: 26px;
+}
+#Section6 {
+    background-color: var(--primary-color);
+    height: 250px;
+    padding: 1vh 20vw;
+}
+#Section6 h1 {
+    color: var(--secondary-color);
+    font-size: 26px;
 }
 @media (max-width: 767px) {
     .bodybackground {
