@@ -4,12 +4,13 @@ body {
     background: var(--highlight-color) /*url('/images/home/carouselborder1.png') center top no-repeat*/;
     background-size:contain;
 }
-#portfolioHeader {
+#contactHeader {
     text-align:center;
-    padding-top: 125px;
-    height: 50px;
+    padding-top: 150px;
+    height: 125px;
     font-family: 'Chakra Petch', Arial;
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: 600;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }

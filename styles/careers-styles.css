@@ -1,6 +1,6 @@
 /* Portfolio Styles */
 
-#portfolioHeader {
+#careersHeader {
     text-align:center;
     padding-top: 150px;
     height: 125px;
@@ -9,4 +9,16 @@
     font-weight: 600;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.job-listings {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    /*border: 1px solid #ddd;
+    background-color: #f9f9f9;*/
+}
+
+.job {
+    margin-bottom: 20px;
 }
