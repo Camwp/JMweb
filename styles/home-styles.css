@@ -94,13 +94,17 @@
 .card.expanded {
     height: 400px;
 }
+.card h2 {
+    margin-top: .5em;
+}
 .label {
     transform: translateY(10px);
     transition: transform 1000ms;
+    align-self: center;
 }
 .card.expanded .label {
     transform: translateY(0);
-    margin: 30px 0;
+    align-self: center;
 }
 .text1 {
     clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
@@ -186,7 +190,10 @@
         transform: translateX(-50%);
    }
     .card h2 {
-        padding-top: 20px;
+        padding-top: 0px;
+   }
+   .card.expanded h2 {
+    margin-top: 0;
    }
     .card.expanded {
         max-height: 300px;

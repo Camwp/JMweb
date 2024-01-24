@@ -1,12 +1,1 @@
-/* Portfolio Styles */
-
-#templateHeader {
-    text-align:center;
-    padding-top: 150px;
-    height: 125px;
-    font-family: 'Chakra Petch', Arial;
-    font-size: 45px;
-    font-weight: 600;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
+/* Template Styles */

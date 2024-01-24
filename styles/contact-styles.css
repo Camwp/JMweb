@@ -6,8 +6,8 @@ body {
 }
 #contactHeader {
     text-align:center;
-    padding-top: 150px;
-    height: 125px;
+    padding: 10vh 0;
+    height: 5vh;
     font-family: 'Chakra Petch', Arial;
     font-size: 45px;
     font-weight: 600;

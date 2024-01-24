@@ -9,6 +9,7 @@
     --secondary-color: #3d728c ; /* BLUE */
     --highlight-color: #F3EFEF; /* LIGHT GREY */
     --header-color: #37B0C9; /* MOON STONE */
+    --paragraph-color: #242424;
 }
 
 body{
@@ -90,6 +91,17 @@ nav a.active{
     margin-left:10px
 }
 
+#templateHeader {
+    text-align:center;
+    padding: 10vh 0;
+    height: 5vh;
+    font-family: 'Chakra Petch', Arial;
+    font-size: 45px;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 /* SECTION 5  - CONTACT US */
 #contactSection {
     background-color: var(--highlight-color);
@@ -98,11 +110,11 @@ nav a.active{
     text-align: center;
 }
 #contactSection button {
-    padding: 5px 20px;
+    padding: 1em 2em;
     background-color: #3d728c;
     border-width: 0px;
 }
-#contactSection button a {
+#contact-button {
     color: white;
     font-size: 16px;
     font-weight: 550;

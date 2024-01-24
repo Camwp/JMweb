@@ -1,6 +1,6 @@
 /* Portfolio Styles */
 
-#careersHeader {
+#careers-Header {
     text-align:center;
     padding-top: 150px;
     height: 125px;
@@ -9,16 +9,92 @@
     font-weight: 600;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    display: none;
 }
+
+
+#carouselcareers {
+    width: 65%;
+    overflow: hidden;
+}
+
+.carouselborder { 
+    position: absolute;
+    z-index: 10; 
+    height: 67.5vh;
+    left: 60vh;
+}
+.carousel-indicators .active {
+    background-color: var(--header-color)
+}
+.carousel-item img {
+    height: 67vh;
+} 
+
+.carousel-text {
+    position: absolute;
+    top: 35%;
+    left: 75%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%);
+    color: var(--secondary-color);
+    text-align: center;
+    z-index: 20; /* Ensure the text is above the image */
+}
+
+.carousel-text h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.carousel-text p {
+    font-size: 1.2em;
+    color: var(--paragraph-color);
+}
+
 
 .job-listings {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    /*border: 1px solid #ddd;
-    background-color: #f9f9f9;*/
+}
+#ziprecruiter {
+    font-size: 18px;
+    text-decoration: none;
 }
 
 .job {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+#section1 {
+    background-color: var(--highlight-color);
+    height: auto;
+    padding: 2vh 20vw;
+}
+
+#section2 {
+    background-color: var(--primary-color);
+    height: auto;
+    padding: 2vh 20vw;
+}
+@media only screen and (max-width:768px){
+    header {
+        top: 0;
+    }
+    #carouselcareers {
+        display: none;
+    }
+    .carousel-text {
+        display: none;
+    }
+    #careers-Header {
+        display: block;
+        padding-top: 10vh;
+        padding-bottom:10vh;
+        margin-top: 0px;
+    }
+    #careers-Header p {
+        font-size: 18px;
+    }
 }
