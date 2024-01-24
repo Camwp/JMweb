@@ -12,6 +12,7 @@
     --paragraph-color: #242424;
 }
 
+
 body{
     margin:0;
     padding:0;
@@ -87,11 +88,48 @@ nav a:hover{
 nav a.active{
     color:#050505;
 }
+/* Added styles for the dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 7px;
+    top: 100%; /* Position dropdown below the parent li */
+    border-top: 2px solid var(--secondary-color); /* Match the border style of nav li */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Added styles for the dropdown triangle */
+.dropbtn:after {
+    content: "\25BC"; /* Unicode character for downward triangle */
+    margin-left: 5px;
+    font-size: 12px;
+    color: var(--secondary-color); /* Use your secondary color */
+}
+
+.dropdown-content:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 5px); /* Center the triangle */
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent; /* Match the background color */
+}
 .iconlogo{
     margin-left:10px
 }
 
 #templateHeader {
+    position: relative;
     text-align:center;
     padding: 10vh 0;
     height: 5vh;
