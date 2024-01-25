@@ -4,7 +4,7 @@ body {
 }
 
 #contactHeader {
-    display: block;
+    display: flow-root;
     text-align: center;
     padding: 15vh 0; /* Adjusted padding to move the content higher */
     height: 40vh; /* Adjusted height */
@@ -40,7 +40,7 @@ body {
     text-align: center;
 }
 .contact-form-container {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center; /* Center vertically */
     height: 100vh; /* Set the container to full height */
