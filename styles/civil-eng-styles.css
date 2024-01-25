@@ -1,0 +1,38 @@
+#civil-eng-Header {
+    position: relative;
+    text-align: center;
+    padding: 10vh 0;
+    height: 5vh;
+    font-family: 'Chakra Petch', Arial;
+    font-size: 45px;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-top: 1em;
+}
+
+#section1 {
+    text-align: center;
+}
+
+#civil-eng-section2 {
+    max-width: 85vw;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}

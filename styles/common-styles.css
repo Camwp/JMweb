@@ -120,6 +120,12 @@ nav a.active {
     /* Position dropdown below the parent li */
     border-top: 2px solid var(--secondary-color);
     /* Match the border style of nav li */
+    padding: 1em 3px;
+    width: 10em;
+    right: -1em;
+}
+.dropdown-content a {
+    margin: 2em 0;
 }
 
 .dropdown:hover .dropdown-content {
