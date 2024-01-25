@@ -72,7 +72,7 @@
 #Section1 {
     align-items: center;
     display: flex;
-    height: 50vh;
+    height: auto;
     justify-content: center;
     font-family: sans-serif;
     margin-bottom: 10px;
