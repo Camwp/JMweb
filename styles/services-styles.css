@@ -9,4 +9,5 @@
     font-weight: 600;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    margin-top: 1em;
 }

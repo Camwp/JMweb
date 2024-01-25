@@ -152,18 +152,6 @@ nav a.active {
     margin-left: 10px
 }
 
-#templateHeader {
-    position: relative;
-    text-align: center;
-    padding: 10vh 0;
-    height: 5vh;
-    font-family: 'Chakra Petch', Arial;
-    font-size: 45px;
-    font-weight: 600;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
 /* SECTION 5  - CONTACT US */
 #contactSection {
     background-color: var(--highlight-color);
@@ -195,7 +183,6 @@ footer.footer {
 
 
 }
-
 .footer-content {
     display: flex;
     align-items: center;
@@ -206,7 +193,6 @@ footer.footer {
         padding: 2em;
     }
 }
-
 .footer-left {
     width: 100%;
     text-align: center;
@@ -217,17 +203,14 @@ footer.footer {
         text-align: left;
     }
 }
-
 .footer-logo {
     width: 130px;
     /* Adjust the size as needed */
     filter: brightness(0) saturate(100%) invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
 }
-
 .footer-menu {
     width: 100%;
     text-align: center;
-
 
     @media (min-width: 768px) {
         width: 33%;
@@ -235,7 +218,6 @@ footer.footer {
         text-align: left;
     }
 }
-
 .social-items {
     width: 100%;
     text-align: center;
@@ -249,23 +231,18 @@ footer.footer {
         margin-top: 0;
     }
 }
-
 footer p {
     color: #fff;
     margin: 0;
 }
-
 footer a {
     color: #fff;
     text-decoration: none;
 }
-
 .social-icon {
     margin-left: 14px;
     /* Adjust the margin as needed */
 }
-
-
 /* MOBILE SCREEN AND 768px<*/
 @media only screen and (max-width:768px) {
     .navsec {
@@ -307,14 +284,12 @@ footer a {
     header.nav-shrink {
         padding-top:5px;
     }
-
     nav.active {
         z-index: -1;
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
-
     nav ul {
         list-style: none;
         margin: 0;
@@ -326,14 +301,12 @@ footer a {
         margin-left: 20px;
         width: 100%;
     }
-
     nav li {
         margin-bottom: 10px;
         border-right: 0;
         padding: 10px 0;
         width: 100%;
     }
-
     nav a {
         text-decoration: none;
         width: 100%;
@@ -341,7 +314,6 @@ footer a {
         transition: color .3s;
 
     }
-
     .menu-toggle {
         display: block;
         position: absolute;
@@ -350,7 +322,6 @@ footer a {
         top: 50%;
         transform: translateY(-50%)
     }
-
     .menu-icon {
         padding: 1px;
         width: 30px;
@@ -359,19 +330,16 @@ footer a {
         margin: 6px 0;
         transition: .4s ease-in-out
     }
-
     header img {
         display: block;
         margin: 0 auto
     }
-
     .navsec {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center
     }
-
     .iconlogo {
         margin-right: 10px
     }

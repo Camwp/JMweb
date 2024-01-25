@@ -172,6 +172,9 @@
     color: var(--primary-color);
     font-size: 26px;
 }
+#Section5 p {
+    color: var(--primary-color);
+}
 #Section6 {
     background-color: var(--primary-color);
     height: auto;
