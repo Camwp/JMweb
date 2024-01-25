@@ -37,11 +37,12 @@ header {
     align-items: center;
     z-index: 1000;
     transition: height .3s ease-in-out;
-    height: 100px
+    height: 100px;
+    top: 0px;
 }
 
 header.nav-shrink {
-    height: 65px
+    height: 65px;
 }
 
 .navsec {
@@ -49,7 +50,7 @@ header.nav-shrink {
     padding: 1em;
     display: flex;
     width: 100%;
-    margin: 0 20px
+    margin: 0 20px;
 }
 
 nav {
@@ -303,6 +304,9 @@ footer a {
         /* Place the nav behind the header */
         overflow: visible;
     }
+    header.nav-shrink {
+        padding-top:5px;
+    }
 
     nav.active {
         z-index: -1;
@@ -372,10 +376,6 @@ footer a {
         margin-right: 10px
     }
 
-    section {
-        padding: 20px;
-        text-align: center
-    }
 
 
 
