@@ -3,18 +3,17 @@
 #carouselcareers {
     width: 65%;
     height: auto;
-    
+    align-items: center;
     position: relative;
 }
 
 .carouselborder { 
     position: absolute;
     overflow: hidden;
-    z-index: 10;/* 
-    height: 67.5vh;
-    left: 60vh;*/
-    transform: translate(50%, 10%);
-    width: 100%;
+    z-index: 10;
+    height: 100%;
+    transform: translate(60%, 0%);
+    margin: auto;
 }
 .carousel-indicators .active {
     background-color: var(--header-color)
@@ -35,7 +34,7 @@
     position: absolute;
     top: 55%; /* Adjust based on your preference */
     left: 50%; /* Adjust the left position to be off to the right of the border */
-    transform: translate(20%, -50%);
+    transform: translate(35%, -50%);
     color: var(--secondary-color);
     text-align: center;
     width: 80%;

@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         if (window.innerWidth <= 768) {
             // Mobile view: Single click toggles dropdown
-            if (timeDiff < 300) {
+            if (timeDiff < 10000) {
                 console.log('Mobile View - Double Click - Navigating to services.html');
                 window.location.href = 'services.html'; // Navigate to services page on double click
             } else {

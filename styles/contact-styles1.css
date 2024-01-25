@@ -34,9 +34,9 @@ body {
 
 #contact-info {
     background-color: var(--primary-color);
-    height: 40vh;
+    height: auto;
     margin: auto;
-    padding: 10vh;
+    padding: 2vh;
     text-align: center;
 }
 .contact-form-container {

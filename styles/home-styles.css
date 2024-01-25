@@ -50,7 +50,7 @@
 }
 .carousel-text h1{
     color:#fff;
-    font-size:44px;
+    font-size:4.20em;
     text-shadow:1px 1px 8px #000;
     font-weight: 500;
 }
@@ -155,7 +155,7 @@
 }
 #Section4 {
     background-color: var(--primary-color);
-    height: 250px;
+    height: auto;
     padding: 1vh 20vw;
 }
 #Section4 h1 {
@@ -165,7 +165,7 @@
 /* SECTION 4 */
 #Section5 {
     background-color: var(--secondary-color);
-    height: 500px;
+    height: auto;
     padding: 1vh 20vw;
 }
 #Section5 h1 {
@@ -174,7 +174,7 @@
 }
 #Section6 {
     background-color: var(--primary-color);
-    height: 250px;
+    height: auto;
     padding: 1vh 20vw;
 }
 #Section6 h1 {
