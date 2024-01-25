@@ -87,11 +87,12 @@ nav a {
     text-decoration: none;
     border-width: 0;
     border-top-style: solid;
-    margin: 2em 0;
+    margin: 1em 0;
     color: #25688a;
     font-size: 1em;
     transition: color .3s;
     align-items: center;
+    padding: 1em 0;
 
 }
 
@@ -104,7 +105,6 @@ nav a.active {
     color: #050505;
 }
 
-/* Added styles for the dropdown */
 .dropdown {
     position: relative;
 }
@@ -120,12 +120,13 @@ nav a.active {
     /* Position dropdown below the parent li */
     border-top: 2px solid var(--secondary-color);
     /* Match the border style of nav li */
-    padding: 1em 3px;
-    width: 10em;
-    right: -1em;
+    padding: 10px; /* Adjust the padding as needed */
+    width: 12em;   /* Adjust the width as needed */
+    right: -1.5em;
 }
 .dropdown-content a {
-    margin: 2em 0;
+    padding: 1em 0;
+    display: block;
 }
 
 .dropdown:hover .dropdown-content {
