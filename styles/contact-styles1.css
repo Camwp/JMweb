@@ -43,20 +43,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; /* Center vertically */
+    height: 100vh; /* Set the container to full height */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .card {
-    background: var(--primary-color);
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    cursor: pointer;
-    margin: 15vh 2em;
+    margin: auto;
     padding: 0 20px;
     position: relative;
-    -webkit-tap-highlight-color: rgba(0,0,0,0.025);
     text-align: center;
-    height: auto;
-    
+    height: 30vh;
+    width: fit-content;
+    /*border-radius: 0;
+    border: none;*/
 }
 .card h2 {
     margin-top: 1em;
@@ -70,7 +69,7 @@ body {
 }
 
 .contact-form {
-    width: 50%;
+    width: 100%;
     margin: 15vh 2em;
     text-align: left;
     font-weight: 600;
@@ -79,13 +78,16 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    display: flex;   
+ 
 }
 
 form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    margin: auto;
+    width: 50vh;
 }
 
 label {
@@ -171,5 +173,13 @@ textarea {
     .contact-form {
         width: 100%;
         margin: 0;
+        
+        display: block;
+    }
+    form {
+        width: auto;
+    }
+    .card {
+        margin-top: 2em;
     }
 }

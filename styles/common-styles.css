@@ -74,7 +74,7 @@ nav a{
     text-decoration:none;
     border-width:0;
     border-top-style:solid;
-    margin:12px 0;
+    margin:2em 0;
     color:#25688a;
     font-size:18px;
     transition:color .3s;
@@ -119,7 +119,7 @@ nav a.active{
     content: "";
     position: absolute;
     top: -10px;
-    left: calc(50% - 5px); /* Center the triangle */
+    left: calc(60% - 10px); /* Center the triangle */
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent #ffffff transparent; /* Match the background color */
@@ -263,6 +263,7 @@ footer a {
         text-align: center;
         transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, visibility 0.8s ease-in-out;
         z-index: 1; /* Place the nav behind the header */
+        overflow:visible;
     }
     nav.active {
         z-index: -1;
@@ -284,7 +285,7 @@ footer a {
     nav li{
         margin-bottom:10px;
         border-right:0;
-        padding: 5px 0;
+        padding: 10px 0;
         width: 100%;
     }
     nav a{
@@ -326,6 +327,27 @@ footer a {
     section{
         padding:20px;
         text-align:center
+    }
+
+
+
+    .dropdown-content {
+        width: 100%; /* Make each item full width */
+        box-sizing: border-box;
+    }
+    .dropdown.active .dropdown-content {
+        display: block;
+        word-spacing: .25em;
+    }
+    .dropdown-content a {
+        padding-right: 10px;
+        border-right:1px solid #202020;
+    }
+    .dropdown-content a {
+        display: block;
+        padding: 12px 0; /* Add padding for better readability */
+        text-decoration: none;
+        color: black; /* Adjust the color as needed */
     }
 }
 
