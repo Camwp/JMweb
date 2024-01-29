@@ -447,4 +447,7 @@ footer a {
     #img-Header a {
         bottom: 1em;
     }
+    #header-border {
+        top: 2px;
+    }
 }
