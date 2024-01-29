@@ -384,7 +384,7 @@ footer a {
         width: 100%;
         font-size: 18px;
         transition: color .3s;
-
+        padding: 0;
     }
     .menu-toggle {
         display: block;
