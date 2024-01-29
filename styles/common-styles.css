@@ -204,7 +204,7 @@ body {
     position: relative;
     z-index: 10;
     width: 100%;
-    min-width: 930px;
+    min-width: 932px;
 }
 
 #header-info {
@@ -442,6 +442,7 @@ footer a {
     #img-Header {
         /* going from 20vh to 10vh */
         padding-top: 10vh;
+        font-size: 40px;
     }
     #img-Header a {
         bottom: 1em;
