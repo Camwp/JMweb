@@ -440,6 +440,10 @@ footer a {
         /* Adjust the color as needed */
     }
     #img-Header {
+        /* going from 20vh to 10vh */
         padding-top: 10vh;
+    }
+    #img-Header a {
+        bottom: 1em;
     }
 }
