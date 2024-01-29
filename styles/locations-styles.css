@@ -80,3 +80,32 @@
     height: 15vh;
     background-color: var(--primary-color);
 }
+
+@media only screen and (max-width:918px) {
+    #section {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    #section h2 {
+        font-size: 2rem;
+    }
+    #left-content li {
+        padding-left: 1em
+    }
+    #right-content img {
+        max-width: 90vw;
+    }
+    .section2 {
+        height: auto;
+        background-color: var(--highlight-color);
+        text-align: center;
+        
+    }
+    
+    .section3 {
+        height: auto;
+        background-color: var(--primary-color);
+        text-align: center;
+    }
+}

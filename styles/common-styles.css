@@ -224,8 +224,8 @@ body {
 /* SECTION 5  - CONTACT US */
 #contactSection {
     background-color: var(--highlight-color);
-    height: 150px;
-    padding: 1vh 20vw;
+    height: auto;
+    padding: 2em 20vw;
     text-align: center;
 }
 
