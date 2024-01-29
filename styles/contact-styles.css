@@ -10,10 +10,10 @@ body {
     /* Adjusted padding to move the content higher */
     height: 40vh;
     /* Adjusted height */
-    font-size: 45px;
+    font-size: 65px;
     font-weight: 600;
     background-color: var(--secondary-color);
-    background-image: url("https://camwp.github.io/JMweb/images/contact/gen.png");
+    background-image: url("/images/contact/contactheader.jpeg");
     background-size: cover;
     background-position: center 78.5%;
     /* Center horizontally and adjust the vertical position */

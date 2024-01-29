@@ -13,7 +13,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/common-styles.css">
-    <link rel="stylesheet" href="styles/contact-styles.css">
+    <link rel="stylesheet" href="styles/test-template-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -58,8 +58,37 @@
             <div class="menu-icon"></div>
         </div>
     </header>
+
+
+
     <section id="contactHeader">
-        <div>
+        
+        <div id="left-content">
+                <form action="scripts/contact-form.php" method="post">
+                    <label for="name" idd="namelabel">Name</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email" id="emaillabel">Email</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="company" id="companylabel">Company</label>
+                    <input type="text" id="company" name="company">
+    
+                    <label for="phone" id="phonelabel">Phone</label>
+                    <input type="phone" id="phone" name="phone" required>
+    
+                    <label for="message" id="messagelabel">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <!-- Add reCAPTCHA here -->
+                    <div class="g-recaptcha" data-sitekey="6LdDpVspAAAAAIlO_DV0fAE-MoXajvnZo8qJAGZs"></div>
+    
+    
+                    <button type="submit" class="submit_button">Submit</button>
+                </form>
+        </div>
+        <div id="right-content">
+            <img class="carouselborder" src="images/home/carouselborder2.png">
             <a>CONTACT US</a>
         </div>
     </section>
@@ -71,42 +100,15 @@
         </div>
     </section>
 
-    <section class="contact-form-container">
-        <div class="contact-form">
-            <form action="scripts/contact-form.php" method="post">
-                <label for="name" idd="namelabel">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email" id="emaillabel">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="company" id="companylabel">Company</label>
-                <input type="text" id="company" name="company">
-
-                <label for="phone" id="phonelabel">Phone</label>
-                <input type="phone" id="phone" name="phone" required>
-
-                <label for="message" id="messagelabel">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <!-- Add reCAPTCHA here -->
-                <div class="g-recaptcha" data-sitekey="6LdDpVspAAAAAIlO_DV0fAE-MoXajvnZo8qJAGZs"></div>
-
-
-                <button type="submit" class="submit_button">Submit</button>
-            </form>
-            <div class="card">
-                <h2 style="margin-bottom: -5px;">CALL US</h1>
-                    <img src="images/home/contacticon.webp" alt="Team Icon" class="label" width="100" height="100">
-                    <div class="text1">
-                        <div class="text-content">
-                            <div class="body-text">See if a career in civil engineering is right for you.</div>
-                        </div>
-                    </div>
+    <div class="card">
+        <h2 style="margin-bottom: -5px;">CALL US</h1>
+            <img src="images/home/contacticon.webp" alt="Team Icon" class="label" width="100" height="100">
+            <div class="text1">
+                <div class="text-content">
+                    <div class="body-text">See if a career in civil engineering is right for you.</div>
+                </div>
             </div>
-        </div>
-
-    </section>
+    </div>
 
 
     <section id="contact-extra">
