@@ -75,14 +75,29 @@ body {
     background-color: var(--highlight-color);
 }
 /* SECTION 1 */
+
 #Section1 {
+    background-color: var(--primary-color);
+    height: auto;
+    padding: 5vh 20vw;
+}
+#Section1 h1 {
+    color: var(--secondary-color);
+    font-size: 26px;
+}
+
+/* SECTION 2 */
+
+#Section2 {
     align-items: center;
     display: flex;
-    height: auto;
     justify-content: center;
     font-family: sans-serif;
-    margin-bottom: 10px;
-    
+    height: 100%;
+    padding: 5vh 10vw;
+    @media screen and (max-width: 1336px) {
+     display: block;   
+    }
 }
 .bodybackground h2{
     width: 100%;
@@ -93,44 +108,27 @@ body {
     background: #3d728c;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    cursor: pointer;
-    height: 300px;
-    margin: 40px;
-    padding: 0 20px;
-    position: relative;
     -webkit-tap-highlight-color: rgba(0,0,0,0.025);
+    margin: 30px;
+    padding: 1em 1em;
+    position: relative;
+    width: 33%;
     text-align: center;
-    transition: height 1000ms;
-    width: 360px;
-}
-.card.expanded {
-    height: 400px;
+    @media screen and (max-width: 1336px) {
+     width: 100%;   
+    }
 }
 .card h2 {
-    margin-top: .5em;
+    color: var(--primary-color);
 }
 .label {
     transform: translateY(10px);
     transition: transform 1000ms;
     align-self: center;
 }
-.card.expanded .label {
-    transform: translateY(0);
-    align-self: center;
-}
 .text1 {
-    clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
-    -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
     transition: clip-path 1000ms;
-    margin-top: 30px;
-}
-.card.expanded .text1 {
-    clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
-    -webkit-clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
-}
-.card.expanded .text-content {
-    transform: translateY(-15px);
-    padding-top: 30px;
+    
 }
 .title {
     font-family: 'Alegreya Sans', sans-serif;
@@ -143,16 +141,6 @@ body {
     font-size: 20px;
 }
 
-/* SECTION 2 */
-#Section2 {
-    background-color: var(--primary-color);
-    height: auto;
-    padding: 5vh 20vw;
-}
-#Section2 h1 {
-    color: var(--secondary-color);
-    font-size: 26px;
-}
 
 /* SECTION 3 */
 #Section3 {
