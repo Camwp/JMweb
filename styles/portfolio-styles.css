@@ -12,6 +12,9 @@
     color: var(--primary-color);
     margin-top: 1em;
 }
+#img-Header {
+	background-position: center 60%;
+}
 
 * {
 	box-sizing: border-box;

@@ -1,4 +1,7 @@
 /* Portfolio Styles */
+#img-Header {
+    background-position: center 95%;
+}
 .splitter {
     height: 2em;
 }
