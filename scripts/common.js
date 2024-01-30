@@ -1,8 +1,30 @@
-function toggleNav() {
-    console.log('Hamburger icon clicked!');
+document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.querySelector('.menu-toggle');
     var nav = document.querySelector('nav');
-    nav.classList.toggle('active');
-}
+
+    function toggleNav() {
+        console.log('Hamburger icon clicked!');
+        nav.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    }
+
+    function closeNav() {
+        console.log('Tapped outside the menu');
+        nav.classList.remove('active');
+        menuToggle.classList.remove('active');
+    }
+
+    menuToggle.addEventListener('click', toggleNav);
+
+    // Close the menu when clicking outside
+    document.addEventListener('click', function (event) {
+        var isClickInside = menuToggle.contains(event.target) || nav.contains(event.target);
+
+        if (!isClickInside) {
+            closeNav();
+        }
+    });
+});
 
 //```// Shrink the NAV on scroll
 //document.addEventListener("DOMContentLoaded", (function() {

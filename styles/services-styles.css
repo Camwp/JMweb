@@ -1,40 +1,38 @@
 /* Template Styles */
-#servicesHeader {
-    position: relative;
-    text-align:center;
-    padding: 10vh 0;
-    height: 5vh;
-    font-family: var(--primary-font), Arial;
-    font-size: 45px;
-    font-weight: 600;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    margin-top: 1em;
+#img-Header {
+  background-position: center 60.5%;
+
 }
 
+
+
+
+
+/* SERVICES */
 #civil-service {
   color: #2c3e50;
-  background: var(--highlight-color);
+  background: var(--primary-color);
   padding: 0 1em 1em;
   height: 50vh;
 }
 #development-service {
     color: #2c3e50;
-    background: var(--primary-color);
+    background: var(--highlight-color);
     padding: 0 1em 1em;
     height: 50vh;
   }
 #survey-service {
   color: #2c3e50;
-  background: var(--highlight-color);
+  background: var(--primary-color);
   padding: 0 1em 1em;
   height: 50vh;
 }
 #construction-service {
     color: #2c3e50;
-    background: var(--primary-color);
+    background: var(--highlight-color);
     padding: 0 1em 1em;
     height: 50vh;
+    margin-bottom: 5em;
 }
 
 h1 {
