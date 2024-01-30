@@ -7,7 +7,7 @@ body {
  
 /* BODY */
 .bodybackground {
-    background-image: url(../images/home/stockbackground.webp);
+    /*background-image: url(../images/home/stockbackground.webp);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* This ensures the background stays fixed while scrolling */
@@ -16,7 +16,7 @@ body {
 .carousel-container{
     max-width:100%;
     margin:0 auto;
-    height:100vh;
+    height:75vh;
 }
 .carousel{
     display:flex;
@@ -71,6 +71,9 @@ body {
     height: 50px;
 }
 
+.bodybackground {
+    background-color: var(--highlight-color);
+}
 /* SECTION 1 */
 #Section1 {
     align-items: center;
@@ -79,6 +82,12 @@ body {
     justify-content: center;
     font-family: sans-serif;
     margin-bottom: 10px;
+    
+}
+.bodybackground h2{
+    width: 100%;
+    margin: 1em auto;
+    text-align: center;
 }
 .card {
     background: #3d728c;
@@ -86,13 +95,13 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     cursor: pointer;
     height: 300px;
-    margin: 20px;
+    margin: 40px;
     padding: 0 20px;
     position: relative;
     -webkit-tap-highlight-color: rgba(0,0,0,0.025);
     text-align: center;
     transition: height 1000ms;
-    width: 260px;
+    width: 360px;
 }
 .card.expanded {
     height: 400px;
@@ -138,7 +147,7 @@ body {
 #Section2 {
     background-color: var(--primary-color);
     height: auto;
-    padding: 2vh 20vw;
+    padding: 5vh 20vw;
 }
 #Section2 h1 {
     color: var(--secondary-color);
@@ -147,25 +156,28 @@ body {
 
 /* SECTION 3 */
 #Section3 {
-    background-color: var(--highlight-color);
-    height: 250px;
-    padding: 1vh 20vw;
-    margin: 0px 0;
-}
-#Section3 h1 {
-    color: var(--secondary-color);
-    font-size: 26px;
-}
-#Section4 {
+    
     background-color: var(--primary-color);
     height: auto;
     padding: 1vh 20vw;
+}
+#Section3 h1 {
+    
+    color: var(--secondary-color);
+    font-size: 26px;
+}
+/* SECTION 4 */
+#Section4 {
+    background-color: var(--primary-color);
+    height: 250px;
+    padding: 1vh 20vw;
+    margin: 0px 0;
 }
 #Section4 h1 {
     color: var(--secondary-color);
     font-size: 26px;
 }
-/* SECTION 4 */
+/* SECTION 5*/
 #Section5 {
     background-color: var(--secondary-color);
     height: auto;
