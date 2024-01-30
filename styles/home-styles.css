@@ -147,29 +147,110 @@ body {
     
     background-color: var(--primary-color);
     height: auto;
-    padding: 1vh 20vw;
+    padding: 4vh 20vw;
 }
 #Section3 h1 {
     
     color: var(--secondary-color);
     font-size: 26px;
 }
-/* SECTION 4 */
+/* SECTION 4 FEATURED PROJECTS*/
 #Section4 {
     background-color: var(--primary-color);
-    height: 250px;
-    padding: 1vh 20vw;
+    height: auto;
+    padding: 4vh 20vw;
     margin: 0px 0;
+    padding-bottom: 10em;
 }
 #Section4 h1 {
     color: var(--secondary-color);
     font-size: 26px;
 }
+
+* {
+	box-sizing: border-box;
+}
+
+#Section4 #gallery-section {
+	font-family: Lato, sans-serif;
+	margin: 0;
+	padding: 0rem;
+    padding-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#gallery-section .gallery img {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1.25 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+}
+
+#gallery-section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 2.8rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 80rem;
+}
+
+#gallery-section figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+#gallery-section figure::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(0, 0, 0, 0.5);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+}
+
+#gallery-section figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	font-size: 1.2rem;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+}
+
+#gallery-section a:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+
+#gallery-section a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
 /* SECTION 5*/
 #Section5 {
     background-color: var(--secondary-color);
     height: auto;
-    padding: 1vh 20vw;
+    padding: 4vh 20vw;
 }
 #Section5 h1 {
     color: var(--primary-color);
@@ -181,7 +262,7 @@ body {
 #Section6 {
     background-color: var(--primary-color);
     height: auto;
-    padding: 1vh 20vw;
+    padding: 4vh 20vw;
 }
 #Section6 h1 {
     color: var(--secondary-color);
