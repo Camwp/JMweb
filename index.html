@@ -181,10 +181,20 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     </section>
 
-    <div id="cookieConsent" class="cookie-consent">
-        <p>This website uses cookies to ensure you get the best experience on our website.</p>
-        <button onclick="acceptCookies()">Accept</button>
-        <button onclick="denyCookies()">Deny</button>
+    <div id="cookieNotice" class="light display-right" style="display: none;">
+        <div id="closeIcon" style="display: none;">
+        </div>
+        <div class="title-wrap">
+            <h4>Cookie Consent</h4>
+        </div>
+        <div class="content-wrap">
+            <div class="msg-wrap">
+                <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our  <a style="color:#115cfa;" href="/privacy-policy">Privacy Policy</a></p>
+                <div class="btn-wrap">
+                    <button class="btn-primary" onclick="acceptCookieConsent();">Accept</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Content for section 4 -->

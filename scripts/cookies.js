@@ -1,35 +1,46 @@
-// Check if the user has previously accepted or denied cookies
-const cookieConsent = localStorage.getItem('cookieConsent');
-
-if (cookieConsent === 'accepted') {
-    // User has already accepted cookies
-    //hideCookieBanner();
-} else if (cookieConsent === 'denied') {
-    // User has already denied cookies
-    // Handle as needed, e.g., show a message or adjust functionality
+// Create cookie
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-// Function to show the cookie consent banner
-function showCookieBanner() {
-    const cookieBanner = document.getElementById('cookieConsent');
-    cookieBanner.style.display = 'block';
+// Delete cookie
+function deleteCookie(cname) {
+  const d = new Date();
+  d.setTime(d.getTime() + (24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=;" + expires + ";path=/";
 }
 
-// Function to hide the cookie consent banner
-function hideCookieBanner() {
-    const cookieBanner = document.getElementById('cookieConsent');
-    cookieBanner.style.display = 'none';
+// Read cookie
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+      }
+  }
+  return "";
 }
 
-// Function to handle user's acceptance of cookies
-function acceptCookies() {
-    localStorage.setItem('cookieConsent', 'accepted');
-    hideCookieBanner();
+// Set cookie consent
+function acceptCookieConsent(){
+  deleteCookie('user_cookie_consent');
+  setCookie('user_cookie_consent', 1, 30);
+  document.getElementById("cookieNotice").style.display = "none";
 }
 
-// Function to handle user's denial of cookies
-function denyCookies() {
-    localStorage.setItem('cookieConsent', 'denied');
-    // Handle denial, e.g., by adjusting functionality or showing a message
-    hideCookieBanner();
+let cookie_consent = getCookie("user_cookie_consent");
+if(cookie_consent != ""){
+    document.getElementById("cookieNotice").style.display = "none";
+}else{
+    document.getElementById("cookieNotice").style.display = "block";
 }
