@@ -31,3 +31,6 @@ main {
   .service i {
     width: 100px;
   }
+  #img-Header {
+    background-position: center 85%;
+  }
