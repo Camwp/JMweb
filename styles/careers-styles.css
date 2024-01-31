@@ -30,13 +30,17 @@
     height: auto;
     padding: 5vh 20vw;
 }
+h2 {
+    font-size: 26px;
+    color: var(--secondary-color);
+}
 
 #section2 {
     background-color: var(--primary-color);
     height: auto;
     padding: 5vh 20vw;
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:918px){
     header {
         top: 0;
     }
