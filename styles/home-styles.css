@@ -283,6 +283,9 @@ a:is(:hover, :focus) figcaption {
     .bodybackground {
         padding: 0;
     }
+    .carousel-text h1{
+        font-size:3.20em;
+    }
     .card {
         margin: 100px 0;
    }
