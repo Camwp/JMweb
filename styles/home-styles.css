@@ -4,7 +4,7 @@
 body {
     padding: 0;
 }
- 
+
 /* BODY */
 .bodybackground {
     /*background-image: url(../images/home/stockbackground.webp);*/
@@ -101,13 +101,16 @@ body {
      display: block;   
     }
 }
-.bodybackground h2{
+#section2-header{
     width: 100%;
-    margin: 1em auto;
+    margin: 0 auto;
     text-align: center;
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 3em 0;
+    font-size: 26px;
 }
 .card {
-    background: #3d728c;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     -webkit-tap-highlight-color: rgba(0,0,0,0.025);
@@ -116,6 +119,11 @@ body {
     position: relative;
     width: 33%;
     text-align: center;
+    background: linear-gradient(
+    160deg,
+    rgb(81, 138, 167) 0%,
+    rgb(61, 114, 140) 100%
+  );
     @media screen and (max-width: 1336px) {
      width: 100%; 
      margin: 6vh 0;  
@@ -123,7 +131,7 @@ body {
 }
 .card img {
     position: absolute;
-    translate: 0 -100px;
+    translate: 0 -120px;
 }
 .card h2 {
     color: var(--primary-color);

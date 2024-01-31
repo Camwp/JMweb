@@ -229,6 +229,10 @@ body {
     padding: 2em 20vw;
     text-align: center;
 }
+#contactSection h3 {
+    color: var(--paragraph-color);
+    font-size: 26px;
+}
 
 #contactSection button {
     padding: 1em 2em;
@@ -260,10 +264,11 @@ footer.footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
+    align-items: end;
     /* Wrap content on smaller screens */
     @media (min-width: 918px) {
-        padding: 2em;
+        padding: 0 2em;
+        padding-bottom: 1em;
     }
 }
 .footer-left {
@@ -291,6 +296,13 @@ footer.footer {
         text-align: left;
     }
 }
+.footer-menu a {
+    display: block;
+    font-weight: 500;
+    text-decoration: none; /* Remove underlines on hover */
+    color: var(--primary-color); /* Set the desired text color on hover */
+    width: fit-content;
+}
 .social-items {
     width: 100%;
     text-align: center;
@@ -311,6 +323,10 @@ footer p {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+#footerNumber {
+    text-decoration: none; /* Remove underlines on hover */
+    color: var(--primary-color); /* Set the desired text color on hover */
 }
 .social-icon {
     margin-left: 14px;
@@ -510,6 +526,9 @@ footer a {
 
     #header-border {
         top: 2px;
+    }
+    .footer-menu a {
+        display: inline;
     }
 }
 
