@@ -1,0 +1,33 @@
+main {
+    max-width: 75vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .service {
+    border: 0px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .service h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: var(--paragraph-color);
+  }
+  .service i {
+    width: 100px;
+  }

@@ -6,7 +6,57 @@
 
 
 
+.service-row {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--primary-color);
+  
+}
 
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 2em 3em;
+  
+}
+#column-one {
+  border-width: 1.25px;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+}
+#column-two {
+  border-width: 1.25px;
+  border-style: solid;
+  border-top: 0;
+  border-right: 0;
+}
+#column-three {
+  border-width: 1.25px;
+  border-style: solid;
+  border-bottom: 0;
+  border-left: 0;
+}
+#column-four {
+  border-width: 1.25px;
+  border-style: solid;
+  border-bottom: 0;
+  border-right: 0;
+}
+.column h2 {
+  display: block;
+  margin: 0 auto;
+  font-size: 26px;
+  color: var(--secondary-color);
+  font-weight: 500;
+
+}
+
+.column p {
+  text-align: left;
+  margin: 0;
+}
 
 /* SERVICES */
 #civil-service {
