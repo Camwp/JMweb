@@ -324,8 +324,32 @@ footer a {
     left: 0;
     width: 100%;
     background-color: var(--highlight-color);
-    padding: 1em 10vw;
+    padding: 1em 20vw;
     z-index: 1000;
+    border-style: solid;
+    border-width: 5px;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-color: var(--secondary-color);
+}
+#cookieNotice h4 {
+    font-size: 20px;
+}
+#cookieNotice p {
+    font-size: 14px;
+}
+#closeIcon {
+    right: 3em;
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    z-index: 10000;
+    cursor: pointer;
+    background-image: url("/images/common/close.png");
+    background-position: center;
+    background-size: cover;
 }
 /* MOBILE SCREEN AND 768px<*/
 @media only screen and (max-width:918px) {

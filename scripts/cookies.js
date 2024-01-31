@@ -44,3 +44,8 @@ if(cookie_consent != ""){
 }else{
     document.getElementById("cookieNotice").style.display = "block";
 }
+
+function denyCookieConsent(){
+  deleteCookie('user_cookie_consent')
+  document.getElementById("cookieNotice").style.display = "none";
+}
