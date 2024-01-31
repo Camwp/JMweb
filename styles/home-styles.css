@@ -305,6 +305,10 @@ a:is(:hover, :focus) figcaption {
     text-align: center;
     padding: 5vh 10vw;
    }
+   #gallery-section {
+    text-align: center;
+    padding: 4vh 2vw;
+   }
    #Section5 {
     padding: 5vh 10vw;
    }
