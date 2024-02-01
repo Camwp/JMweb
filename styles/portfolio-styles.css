@@ -81,7 +81,7 @@ figcaption {
 	place-items: center;
 	text-align: center;
 	padding: 1rem;
-	color: white;
+	color: var(--primary-color);
 	font-size: 1.2rem;
 	z-index: 1;
 	opacity: 0;

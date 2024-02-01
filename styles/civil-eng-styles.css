@@ -3,7 +3,7 @@
     text-align: center;
     padding: 10vh 0;
     height: 5vh;
-    font-family: 'Chakra Petch', Arial;
+    font-family: var(--primary-font), Arial;
     font-size: 45px;
     font-weight: 600;
     background-color: var(--secondary-color);

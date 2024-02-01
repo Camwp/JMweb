@@ -132,7 +132,7 @@ textarea {
 .submit_button {
     grid-column: span 2;
     background-color: #333;
-    color: #fff;
+    color: var(--primary-color);
     padding: 1em;
     border: none;
     cursor: pointer;

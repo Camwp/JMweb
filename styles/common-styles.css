@@ -4,7 +4,8 @@
 :root {
     /* FONTS */
     --primary-font: 'Poppins';
-
+    --header-size: 26px;
+    --paragraph-size: 20px;
     /* COLORS */
     --primary-color: white;
     /* WHITE*/
@@ -106,6 +107,7 @@ nav a.active {
 .dropdown-content a {
     padding: 1em 0;
     display: block;
+    color: var(--secondary-color);
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -451,7 +453,7 @@ footer a {
 
     .dropdown-content a {
         padding-right: 10px;
-        border-right: 1px solid #202020;
+        /*border-right: 1px solid #202020;*/
     }
 
     .dropdown-content a {
@@ -459,7 +461,6 @@ footer a {
         padding: 12px 0;
         /* Add padding for better readability */
         text-decoration: none;
-        color: black;
         /* Adjust the color as needed */
     }
     #img-Header {

@@ -52,7 +52,7 @@ body {
     font-family: var(--primary-font), Arial;
 }
 .carousel-text h1{
-    color:#fff;
+    color:var(--primary-color);
     font-size:4.20em;
     text-shadow:1px 1px 8px #000;
     font-weight: 500;
@@ -81,11 +81,11 @@ body {
 #Section1 {
     background-color: var(--primary-color);
     height: auto;
-    padding: 5vh 20vw;
+    padding: 6.7vh 20vw;
 }
 #Section1 h1 {
     color: var(--secondary-color);
-    font-size: 26px;
+    font-size: var(--header-size)
 }
 
 /* SECTION 2 */
@@ -96,7 +96,7 @@ body {
     justify-content: center;
     font-family: sans-serif;
     height: 100%;
-    padding: 5vh 10vw;
+    padding: 5vh 15vw;
     @media screen and (max-width: 1336px) {
      display: block;   
     }
@@ -108,7 +108,7 @@ body {
     color: var(--secondary-color);
     font-weight: 600;
     padding: 3em 0;
-    font-size: 26px;
+    font-size: var(--header-size)
 }
 .card {
     border-radius: 8px;
@@ -119,16 +119,36 @@ body {
     position: relative;
     width: 33%;
     text-align: center;
+    
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     background: linear-gradient(
-    160deg,
-    rgb(81, 138, 167) 0%,
+    180deg,
+    rgb(116, 152, 170) 0%,
     rgb(61, 114, 140) 100%
-  );
+    );
     @media screen and (max-width: 1336px) {
      width: 100%; 
      margin: 6vh 0;  
     }
 }
+
+  #Section2 .card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 .card img {
     position: absolute;
     translate: 0 -120px;
@@ -150,28 +170,25 @@ body {
     
 }
 .title {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 900;
-    margin: 20px 0 12px;
+    font-family: var(--primary-font), sans-serif;
+    font-weight: 600;
+    margin: 25px 0 25px;
 }
 .body-text {
     padding: 0 20px;
     color: white;
-    font-size: 20px;
+    font-size: var(--paragraph-size)
 }
-
 
 /* SECTION 3 */
 #Section3 {
-    
     background-color: var(--primary-color);
     height: auto;
     padding: 4vh 20vw;
 }
 #Section3 h1 {
-    
     color: var(--secondary-color);
-    font-size: 26px;
+    font-size: var(--header-size)
 }
 /* SECTION 4 FEATURED PROJECTS*/
 #gallery-section {
@@ -183,9 +200,8 @@ body {
 }
 #gallery-section h1 {
     color: var(--secondary-color);
-    font-size: 26px;
+    font-size: var(--header-size)
 }
-
 .gallery img {
 	width: 100%;
 	display: block;
@@ -193,7 +209,6 @@ body {
 	object-fit: cover;
 	transition: transform 1000ms;
 }
-
 #gallery-section ul {
 	list-style: none;
 	margin: 0 auto;
@@ -202,15 +217,13 @@ body {
 	gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	max-width: 100%;
-	width: 100rem; /* SET BACK TO 100rem*/
+	width: 100rem;
 }
-
 figure {
 	margin: 0;
 	position: relative;
 	overflow: hidden;
 }
-
 figure::after {
 	content: '';
 	position: absolute;
@@ -224,7 +237,6 @@ figure::after {
 	transform: scale(2);
 	transition: opacity 300ms;
 }
-
 figcaption {
 	position: absolute;
 	top: 0;
@@ -236,23 +248,19 @@ figcaption {
 	place-items: center;
 	text-align: center;
 	padding: 1rem;
-	color: white;
+	color: var(--primary-color);
 	font-size: 1.2rem;
 	z-index: 1;
 	opacity: 0;
 	transition: opacity 600ms, transform 600ms;
 }
-
 a:is(:hover, :focus) figure::after {
 	opacity: 1;
 }
-
 a:is(:hover, :focus) figcaption {
 	opacity: 1;
 	transition: opacity 600ms;
 }
-
-
 
 /* SECTION 5*/
 #Section5 {
@@ -262,7 +270,7 @@ a:is(:hover, :focus) figcaption {
 }
 #Section5 h1 {
     color: var(--primary-color);
-    font-size: 26px;
+    font-size: var(--header-size)
 }
 #Section5 p {
     color: var(--primary-color);
@@ -274,9 +282,8 @@ a:is(:hover, :focus) figcaption {
 }
 #Section6 h1 {
     color: var(--secondary-color);
-    font-size: 26px;
+    font-size: var(--header-size)
 }
-
 
 /* MOBILE STYLES */
 @media (max-width: 918px) {
