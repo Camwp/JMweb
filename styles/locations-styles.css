@@ -81,7 +81,36 @@
     background-color: var(--primary-color);
 }
 
+/* Add your custom styles here */
+#mapModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+#mapContainer {
+    height: 30vh; /* Set your desired height */
+    width: 100%;
+}
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
 @media only screen and (max-width:918px) {
+    #mapModal {
+        width: 80%;
+    }
     #section {
         display: block;
         height: auto;
