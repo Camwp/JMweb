@@ -3,17 +3,18 @@
 
 :root {
     /* FONTS */
-    --primary-font: 'Poppins';
-    --header-size: 26px;
-    --paragraph-size: 20px;
+    --primary-font: 'Poppins'; 
+    --header-size: 28px;
+    --paragraph-size: 18px;
+    --header-weight: 650;
     /* COLORS */
     --primary-color: white;
     /* WHITE*/
-    --secondary-color: #3d728c;
+    --secondary-color: #37B0C9;
     /* BLUE */
     --highlight-color: #F3EFEF;
     /* LIGHT GREY */
-    --header-color: #37B0C9;
+    --header-color: #3d728c; /* FOOTER COLOR */
     /* MOON STONE */
     --paragraph-color: #242424;
 }
@@ -107,7 +108,7 @@ nav a.active {
 .dropdown-content a {
     padding: 1em 0;
     display: block;
-    color: var(--secondary-color);
+    color: var(--header-color);
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -117,7 +118,7 @@ nav a.active {
     /* Unicode character for downward triangle */
     margin-left: 5px;
     font-size: 12px;
-    color: var(--secondary-color);
+    color: var(--header-color);
     /* Use your secondary color */
 }
 .dropdown-content:after {
@@ -163,6 +164,7 @@ body {
     z-index: 5;
     bottom: 2em;
     margin-left: 3em;
+    
 }
 #header-border {
     position: relative;
@@ -177,6 +179,12 @@ body {
     margin: auto;
     padding: 2vh;
     text-align: center;
+    font-size: var(--header-size);
+    color: var(--secondary-color)
+}
+#header-info p {
+    font-size: var(--paragraph-size);
+    color: var(--header-color)
 }
 
 /* SECTION 5  - CONTACT US */
@@ -194,7 +202,7 @@ body {
 
 #contactSection button {
     padding: 1em 2em;
-    background-color: #3d728c;
+    background-color: var(--header-color);
     border-width: 0px;
 }
 
@@ -213,7 +221,7 @@ body {
 footer.footer {
     width: 100%;
     padding: 20px 0;
-    background-color: var(--secondary-color);
+    background-color: var(--header-color);
 }
 .footer-content {
     display: flex;

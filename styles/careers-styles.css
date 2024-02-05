@@ -22,7 +22,15 @@
 }
 
 .job {
+    font-size: var(--header-size);
     margin-bottom: 40px;
+}
+.job p {
+    font-size: var(--paragraph-size);
+}
+
+#section1 p, #section2 p{
+    font-size: var(--paragraph-size);
 }
 
 #section1 {
@@ -30,8 +38,9 @@
     height: auto;
     padding: 5vh 20vw;
 }
+
 h2 {
-    font-size: 26px;
+    font-size: var(--header-size);
     color: var(--secondary-color);
 }
 

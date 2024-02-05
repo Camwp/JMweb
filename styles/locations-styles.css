@@ -30,6 +30,9 @@
     padding: 1em;
     padding-left: 0;
 }
+#left-content p {
+    font-size: var(--paragraph-size);
+}
 #left-content li {
     padding: 1em;    
     padding-left: 0;
@@ -39,7 +42,7 @@
     font-weight: 600;
 }
 #left-content li a {
-    color: var(--secondary-color);
+    color: var(--header-color);
 }
 #right-content {
     display: flex;

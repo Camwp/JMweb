@@ -1,5 +1,5 @@
 main {
-    max-width: 75vw;
+    max-width: 50vw;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -21,15 +21,17 @@ main {
   .service h2 {
     font-size: 20px;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--header-color);
   }
   
   .service p {
     font-size: 16px;
     color: var(--paragraph-color);
+    display: none;
   }
   .service i {
     width: 100px;
+    display: none;
   }
   #img-Header {
     background-position: center 85%;

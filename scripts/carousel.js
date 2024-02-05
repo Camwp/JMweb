@@ -37,13 +37,17 @@ document.addEventListener('DOMContentLoaded', typeWriter);
 const options = {
     threshold: 0.5 // Adjust the threshold as needed
   };
-
+  var myElement = document.getElementById("section2-header");
+            
+  // Add a class to the element
+  
   // Callback function to handle intersection changes
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
           entry.target.classList.add('fade-in');
+          myElement.classList.add("fade-in");
         }, 500 * index); // Adjust the delay as needed
         observer.unobserve(entry.target);
       }
@@ -57,4 +61,5 @@ const options = {
   const cards = document.querySelectorAll('#Section2 .card');
   cards.forEach(card => {
     observer.observe(card);
+    
   });

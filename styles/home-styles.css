@@ -73,22 +73,27 @@ body {
     height: 50px;
 }
 
-.bodybackground {
-    background-color: var(--highlight-color);
-}
+
 /* SECTION 1 */
 
 #Section1 {
     background-color: var(--primary-color);
     height: auto;
-    padding: 6.7vh 20vw;
+    padding: 3vh 20vw;
 }
 #Section1 h1 {
     color: var(--secondary-color);
-    font-size: var(--header-size)
+    font-size: var(--header-size);
+    margin: 1em auto;
+}
+#Section1 p {
+    font-size: var(--paragraph-size);
 }
 
 /* SECTION 2 */
+.bodybackground {
+    background-color: var(--highlight-color);
+}
 
 #Section2 {
     align-items: center;
@@ -108,29 +113,40 @@ body {
     color: var(--secondary-color);
     font-weight: 600;
     padding: 3em 0;
-    font-size: var(--header-size)
+    font-size: var(--header-size);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+#section2-header.fade-in {
+    opacity: 1;
+    transform: translate(0);
 }
 .card {
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     -webkit-tap-highlight-color: rgba(0,0,0,0.025);
-    margin: 30px;
+    margin: 20px;
     padding: 1em 1em;
     position: relative;
     width: 33%;
-    text-align: center;
     
+    text-align: center;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     background: linear-gradient(
-    180deg,
-    rgb(116, 152, 170) 0%,
+    170deg,
+    rgb(116, 152, 170) 10%,
     rgb(61, 114, 140) 100%
     );
+    border: 0px;
     @media screen and (max-width: 1336px) {
      width: 100%; 
      margin: 6vh 0;  
+    }
+    @media (min-width: 1337px) {
+        min-height: 20vh;
     }
 }
 
@@ -164,6 +180,11 @@ body {
     background-color: var(--secondary-color); /* Replace 'yourColor' with the desired background color */
     padding: 5px; /* Adjust the padding as needed */
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background: linear-gradient(
+    170deg,
+    rgb(116, 152, 170) 10%,
+    rgb(61, 114, 140) 100%
+    );
 }
 .text1 {
     transition: clip-path 1000ms;
@@ -177,7 +198,8 @@ body {
 .body-text {
     padding: 0 20px;
     color: white;
-    font-size: var(--paragraph-size)
+    font-size: var(--paragraph-size);
+    line-height: 2rem;
 }
 
 /* SECTION 3 */
@@ -189,6 +211,9 @@ body {
 #Section3 h1 {
     color: var(--secondary-color);
     font-size: var(--header-size)
+}
+#Section3 p {
+    font-size: var(--paragraph-size);
 }
 /* SECTION 4 FEATURED PROJECTS*/
 #gallery-section {
@@ -264,7 +289,7 @@ a:is(:hover, :focus) figcaption {
 
 /* SECTION 5*/
 #Section5 {
-    background-color: var(--secondary-color);
+    background-color: var(--header-color);
     height: auto;
     padding: 4vh 20vw;
 }
@@ -274,6 +299,7 @@ a:is(:hover, :focus) figcaption {
 }
 #Section5 p {
     color: var(--primary-color);
+    font-size: var(--paragraph-size);
 }
 #Section6 {
     background-color: var(--primary-color);
@@ -283,6 +309,9 @@ a:is(:hover, :focus) figcaption {
 #Section6 h1 {
     color: var(--secondary-color);
     font-size: var(--header-size)
+}
+#Section6 p {
+    font-size: var(--paragraph-size);
 }
 
 /* MOBILE STYLES */

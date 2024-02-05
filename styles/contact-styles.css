@@ -149,6 +149,12 @@ textarea {
     margin: auto;
     padding: 10vh;
 }
+#contact-extra h3 {
+    font-size: var(--header-size);
+}
+#contact-extra p {
+    font-size: var(--paragraph-size);
+}
 
 #contactSection {
     display: none;
