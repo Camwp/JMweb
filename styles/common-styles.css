@@ -151,7 +151,7 @@ body {
     display: flow-root;
     text-align: left;
     font-size: 3.6em;
-    font-weight: 600;
+    font-weight: var(--header-weight);
     background-size: cover;
     background-position: center 78.5%;
     color: var(--primary-color);
@@ -180,7 +180,8 @@ body {
     padding: 2vh;
     text-align: center;
     font-size: var(--header-size);
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    
 }
 #header-info p {
     font-size: var(--paragraph-size);

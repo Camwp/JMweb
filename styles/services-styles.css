@@ -201,7 +201,10 @@
 }
 @media screen and (max-width: 918px){
   #our-services div {
-    margin: auto 10px;
+    margin: auto 10vw;
+  }
+  #our-services p {
+    padding: 0 10vw;
   }
   #industries {
     display: block;
@@ -209,9 +212,20 @@
   }
   #industries div {
     width: 100%;
+    padding: 0;
   }
   #industries h2 {
     margin: 1.5em auto 1em;
+  }
+  #industries ul {
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #industries ul li {
+    justify-self: unset;
+  }
+  #industries-more-text {
+    width: auto;
   }
 }
 @keyframes flipdown {

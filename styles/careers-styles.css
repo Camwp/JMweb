@@ -63,4 +63,10 @@ h2 {
     .carouselborder {
         display: none;
     }
+    #section1 {
+        padding: 5vh 10vw;
+    }
+    #section2 {
+        padding: 5vh 10vw;
+    }
 }
