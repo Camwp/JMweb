@@ -83,6 +83,7 @@ nav a {
 nav a:hover {
     color: #5595b3;
     background-color: #ffffff;
+    text-decoration: none;
 }
 nav a.active {
     color: #050505;
@@ -101,14 +102,17 @@ nav a.active {
     /* Position dropdown below the parent li */
     border-top: 2px solid var(--secondary-color);
     /* Match the border style of nav li */
-    padding: 10px; /* Adjust the padding as needed */
-    width: 12em;   /* Adjust the width as needed */
-    right: -1.5em;
+    padding: 0 5px; /* Adjust the padding as needed */
+    width: 15em;   /* Adjust the width as needed */
+    right: -2.5em;
+    border-radius: 2px;
 }
 .dropdown-content a {
     padding: 1em 0;
     display: block;
     color: var(--header-color);
+    text-decoration: none;
+    margin: 0;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -124,13 +128,17 @@ nav a.active {
 .dropdown-content:after {
     content: "";
     position: absolute;
-    top: -10px;
-    left: calc(60% - 10px);
+    top: -12px;
+    left: calc(60% + 18px);
     /* Center the triangle */
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent #ffffff transparent;
     /* Match the background color */
+}
+.navsec hr {
+    padding: 0;
+    margin: 0;
 }
 .iconlogo {
     margin-left: 10px
@@ -183,10 +191,89 @@ body {
     color: var(--secondary-color);
     
 }
+#header-info h3 {
+    font-weight: var(--header-weight);
+}
 #header-info p {
     font-size: var(--paragraph-size);
     color: var(--header-color)
 }
+
+
+/* SECTION 4 FEATURED PROJECTS*/
+#gallery-section {
+    background-color: var(--primary-color);
+    height: auto;
+    padding: 4vh 20vw;
+    margin: 0px 0;
+    padding-bottom: 10em;
+}
+#gallery-section h1 {
+    color: var(--secondary-color);
+    font-size: var(--header-size);
+    font-weight: var(--header-weight);
+    margin-bottom: 1em ;
+}
+.gallery img {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1.25 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+}
+#gallery-section ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 100rem;
+}
+figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+figure::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(0, 0, 0, 0.5);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+}
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: var(--primary-color);
+	font-size: 1.2rem;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+}
+a:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
+
 
 /* SECTION 5  - CONTACT US */
 #contactSection {
@@ -490,6 +577,10 @@ footer a {
     #header-border {
         top: 2px;
     }
+    #gallery-section {
+        text-align: center;
+        padding: 4vh 1rem;
+       }
     .footer-menu a {
         display: inline;
     }

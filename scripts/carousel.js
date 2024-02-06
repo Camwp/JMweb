@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', typeWriter);
 
 // Intersection Observer configuration
 const options = {
-    threshold: 0.5 // Adjust the threshold as needed
+    threshold: 0 // Adjust the threshold as needed
   };
   var myElement = document.getElementById("section2-header");
             

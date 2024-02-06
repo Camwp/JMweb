@@ -213,81 +213,10 @@ body {
     color: var(--secondary-color);
     font-size: var(--header-size);
     font-weight: var(--header-weight);
+    margin: 1em auto;
 }
 #Section3 p {
     font-size: var(--paragraph-size);
-}
-/* SECTION 4 FEATURED PROJECTS*/
-#gallery-section {
-    background-color: var(--primary-color);
-    height: auto;
-    padding: 4vh 20vw;
-    margin: 0px 0;
-    padding-bottom: 10em;
-}
-#gallery-section h1 {
-    color: var(--secondary-color);
-    font-size: var(--header-size);
-    font-weight: var(--header-weight);
-}
-.gallery img {
-	width: 100%;
-	display: block;
-	aspect-ratio: 1.25 / 1;
-	object-fit: cover;
-	transition: transform 1000ms;
-}
-#gallery-section ul {
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	max-width: 100%;
-	width: 100rem;
-}
-figure {
-	margin: 0;
-	position: relative;
-	overflow: hidden;
-}
-figure::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200%;
-	height: 200%;
-	background: rgba(0, 0, 0, 0.5);
-	transform-origin: center;
-	opacity: 0;
-	transform: scale(2);
-	transition: opacity 300ms;
-}
-figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	place-items: center;
-	text-align: center;
-	padding: 1rem;
-	color: var(--primary-color);
-	font-size: 1.2rem;
-	z-index: 1;
-	opacity: 0;
-	transition: opacity 600ms, transform 600ms;
-}
-a:is(:hover, :focus) figure::after {
-	opacity: 1;
-}
-a:is(:hover, :focus) figcaption {
-	opacity: 1;
-	transition: opacity 600ms;
 }
 
 /* SECTION 5*/
@@ -300,6 +229,7 @@ a:is(:hover, :focus) figcaption {
     color: var(--primary-color);
     font-size: var(--header-size);
     font-weight: var(--header-weight);
+    margin: 1em auto;
 }
 #Section5 p {
     color: var(--primary-color);
@@ -314,6 +244,7 @@ a:is(:hover, :focus) figcaption {
     color: var(--secondary-color);
     font-size: var(--header-size);
     font-weight: var(--header-weight);
+    margin: 1em auto;
 }
 #Section6 p {
     font-size: var(--paragraph-size);
@@ -349,10 +280,7 @@ a:is(:hover, :focus) figcaption {
     text-align: center;
     padding: 5vh 10vw;
    }
-   #gallery-section {
-    text-align: center;
-    padding: 4vh 1rem;
-   }
+   
    #Section5 {
     padding: 5vh 10vw;
    }
