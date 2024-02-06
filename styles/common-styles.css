@@ -4,9 +4,9 @@
 :root {
     /* FONTS */
     --primary-font: 'Poppins'; 
-    --header-size: 28px;
+    --header-size: 32px;
     --paragraph-size: 18px;
-    --header-weight: 650;
+    --header-weight: 600;
     /* COLORS */
     --primary-color: white;
     /* WHITE*/
