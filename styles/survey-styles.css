@@ -36,3 +36,21 @@ main {
   #img-Header {
     background-position: center 85%;
   }
+  hr {
+    @media screen and (min-width: 1336px) {
+        display: none;
+    }
+}
+  @media screen and (max-width:1336px) {
+    #main {
+        max-width: 100%;
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
