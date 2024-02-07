@@ -196,7 +196,9 @@ body {
 }
 #header-info p {
     font-size: var(--paragraph-size);
-    color: var(--header-color)
+    color: var(--header-color);
+    max-width: 60%;
+    margin: auto;
 }
 
 
@@ -576,6 +578,9 @@ footer a {
 
     #header-border {
         top: 2px;
+    }
+    #header-info p {
+        max-width: 90%;
     }
     #gallery-section {
         text-align: center;

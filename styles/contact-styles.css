@@ -50,7 +50,6 @@ body {
     padding: 0 20px;
     position: relative;
     text-align: center;
-    height: 30vh;
     width: fit-content;
     /*border-radius: 0;
     border: none;*/
@@ -59,7 +58,9 @@ body {
 
 .card h2 {
     margin-top: 1em;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    font-weight: var(--header-weight);
+    font-size: var(--header-size);
 }
 
 .card .label {
@@ -90,6 +91,7 @@ form {
     gap: 10px;
     margin: auto;
     width: 50vh;
+    font-size: var(--paragraph-size);
 }
 
 label {
@@ -147,19 +149,44 @@ textarea {
 #contact-extra {
     background-color: var(--primary-color);
     margin: auto;
-    padding: 10vh;
+    padding: 10vh 0;
 }
 #contact-extra h3 {
     font-size: var(--header-size);
+    font-weight: var(--header-weight);
 }
 #contact-extra p {
     font-size: var(--paragraph-size);
 }
-
+#phoneNumber, #email {
+    color: var(--header-color);
+    text-decoration: none;
+}
+#phoneNumber:hover, #email:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.body-number, .body-email, .body-text {
+    margin: 1em 0;
+    font-size: var(--paragraph-size);
+}
+#contact-extra div {
+    margin: 1em auto;
+    margin: 5vh 10vw;
+}
 #contactSection {
     display: none;
 }
+#extra1 a, #extra2 a {
+    color:var(--header-color);
+    font-weight: var(--header-weight);
 
+}
+#extra1 a:hover, #extra2 a:hover {
+    color:var(--secondary-color);
+    text-decoration: none;
+
+}
 @media only screen and (max-width: 918px) {
     #contactHeader {
         padding: 10vh 0;
@@ -199,5 +226,12 @@ textarea {
 
     .card {
         margin-top: 2em;
+        height:auto;
+    }
+    #contact-extra {
+        padding: 1vh 1rem;
+    }
+    #contact-extra div {
+        margin: 5vh 1rem;
     }
 }
