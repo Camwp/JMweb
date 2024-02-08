@@ -211,6 +211,33 @@
   width: 80%;
   margin: auto;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+	figcaption {
+		transform: translate3d(0, 2rem, 0);
+	}
+	
+	figure::after {
+		border-radius: 50%;
+		opacity: 1;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+	
+	.gallery a:is(:hover, :focus) figure::after {
+		transform: scale(2.5);
+	}
+
+	.gallery a:is(:hover, :focus) figcaption {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		transition: opacity 600ms 400ms, transform 600ms 400ms;
+	}
+
+	.gallery a:is(:hover, :focus) img {
+		transform: scale(1.2);
+	}
+}
 @media screen and (max-width: 918px){
   #split-image {
     height: 30vh;

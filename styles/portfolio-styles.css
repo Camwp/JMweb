@@ -1,17 +1,6 @@
 /* Portfolio Styles */
 
-#portfolioHeader {
-    position: relative;
-    text-align:center;
-    padding: 10vh 0;
-    height: 5vh;
-    font-family: var(--primary-font), Arial;
-    font-size: 45px;
-    font-weight: 600;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    margin-top: 1em;
-}
+
 #img-Header {
 	background-position: center 60%;
 }
@@ -88,11 +77,11 @@ figcaption {
 	transition: opacity 600ms, transform 600ms;
 }
 
-a:is(:hover, :focus) figure::after {
+.gallery a:is(:hover, :focus) figure::after {
 	opacity: 1;
 }
 
-a:is(:hover, :focus) figcaption {
+.gallery a:is(:hover, :focus) figcaption {
 	opacity: 1;
 	transition: opacity 600ms;
 }
@@ -109,17 +98,17 @@ a:is(:hover, :focus) figcaption {
 		transition: transform 900ms;
 	}
 	
-	a:is(:hover, :focus) figure::after {
+	.gallery a:is(:hover, :focus) figure::after {
 		transform: scale(2.5);
 	}
 
-	a:is(:hover, :focus) figcaption {
+	.gallery a:is(:hover, :focus) figcaption {
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 		transition: opacity 600ms 400ms, transform 600ms 400ms;
 	}
 
-	a:is(:hover, :focus) img {
+	.gallery a:is(:hover, :focus) img {
 		transform: scale(1.2);
 	}
 }
