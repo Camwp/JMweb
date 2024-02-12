@@ -93,6 +93,7 @@ body {
 
 /* SECTION 2 */
 .bodybackground {
+    
     background-color: var(--highlight-color);
     @media (min-width: 1336px) {
     }
@@ -105,6 +106,7 @@ body {
     font-family: sans-serif;
     height: 100%;
     padding: 8vh 10vw;
+    
     @media screen and (max-width: 1336px) {
      display: block;   
     }
@@ -295,7 +297,7 @@ hr {
 }
 
 /* MOBILE STYLES */
-@media (max-width: 918px) {
+@media (max-width: 1337px) {
     .bodybackground {
         padding: 0;
     }
