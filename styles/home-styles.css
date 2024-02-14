@@ -238,6 +238,7 @@ hr {
     font-size: var(--paragraph-size);
 }
 
+
 /* SECTION 5*/
 #Section5 {
     background-color: var(--header-color);
@@ -331,10 +332,10 @@ hr {
     text-align: center;
     padding: 5vh 10vw;
    }
-   
    #Section5 {
     padding: 5vh 10vw;
    }
+   
    #Section6 {
     text-align: center;
     padding: 5vh 10vw;
