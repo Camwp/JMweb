@@ -50,7 +50,7 @@
   font-size: 16px;
   color: var(--paragraph-color);
   position: absolute;
-  top: 100%; /* Position below the header */
+  /*top: 100%; /* Position below the header */
   left: 0;
   width: 100%;
   background-color: #fff;
