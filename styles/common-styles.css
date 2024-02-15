@@ -75,7 +75,7 @@ nav a {
     border-top-style: solid;
     margin: 1em 0;
     color: #25688a;
-    font-size: 1.2em;
+    font-size: var(--paragraph-size);
     transition: color .3s;
     align-items: center;
     padding: 1em 0;

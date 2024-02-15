@@ -79,13 +79,13 @@ body {
 #Section1 {
     background-color: var(--primary-color);
     height: auto;
-    padding: 3vh 20vw;
+    padding: 4vh 20vw;
 }
 #Section1 h1 {
     color: var(--secondary-color);
     font-size: var(--header-size);
     font-weight: var(--header-weight);
-    margin: 1em auto;
+    margin: 0 auto 1em;
 }
 #Section1 p {
     font-size: var(--paragraph-size);
@@ -232,7 +232,7 @@ hr {
     color: var(--secondary-color);
     font-size: var(--header-size);
     font-weight: var(--header-weight);
-    margin: 1em auto;
+    margin: 0 auto 1em;
 }
 #Section3 p {
     font-size: var(--paragraph-size);
@@ -249,7 +249,7 @@ hr {
     color: var(--primary-color);
     font-size: var(--header-size);
     font-weight: var(--header-weight);
-    margin: 1em auto;
+    margin: 0 auto 1em;
 }
 #Section5 p {
     color: var(--primary-color);
@@ -264,7 +264,7 @@ hr {
     color: var(--secondary-color);
     font-size: var(--header-size);
     font-weight: var(--header-weight);
-    margin: 1em auto;
+    margin: 0 auto 1em;
 }
 #Section6 p {
     font-size: var(--paragraph-size);
