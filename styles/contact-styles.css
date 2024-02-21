@@ -92,17 +92,19 @@ form {
     margin: auto;
     width: 50vh;
     font-size: var(--paragraph-size);
+    padding: 0 1em 0;
 }
 
 label {
-    margin-bottom: 0.5em;
+    margin-bottom: 0em;
+
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
+    padding: 0.25em;
+    margin-bottom: 0;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -121,6 +123,7 @@ textarea {
 #phonelabel,
 #phone {
     grid-column: span 1;
+    align-self: center;
 }
 
 #message {

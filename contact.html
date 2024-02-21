@@ -80,7 +80,7 @@
 
     <section class="contact-form-container">
         <div class="contact-form">
-            <form action="scripts/contact-form.php" method="post">
+            <form id="contactForm" action="scripts/contact-form.php" method="post">
                 <label for="name" idd="namelabel">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -94,13 +94,13 @@
                 <input type="phone" id="phone" name="phone" required>
 
                 <label for="message" id="messagelabel">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="3" required></textarea>
 
-                <!-- Add reCAPTCHA here -->
+                <!-- Add reCAPTCHA here 
                 <div class="g-recaptcha" data-sitekey="6LdDpVspAAAAAIlO_DV0fAE-MoXajvnZo8qJAGZs"></div>
+                -->
 
-
-                <button type="submit" class="submit_button">Submit</button>
+                <button type="button" class="submit_button" id="submitBtn">Submit</button>
             </form>
             <div class="card">
                 <hr>
@@ -177,7 +177,29 @@
     crossorigin="anonymous"></script>
 <script src="scripts/common.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script src="scripts/contact-us.php"></script>
+<script>
+    $(document).ready(function () {
+        $('#submitBtn').on('click', function () {
+            // Perform AJAX request
+            $.ajax({
+                type: 'POST',
+                url: 'scripts/contact-form.php',
+                data: $('#contactForm').serialize(), // Serialize form data
+                success: function (response) {
+                    // Display success message or handle the response
+                    alert('Form submitted successfully!');
+                },
+                error: function (error) {
+                    // Handle errors
+                    console.error('Error submitting form:', error);
+                    alert('Error submitting form. Please try again.');
+                }
+            });
+        });
+    });
+</script>
+
 
 </html>
