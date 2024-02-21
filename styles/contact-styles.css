@@ -72,7 +72,7 @@ body {
 }
 
 .contact-form {
-    
+
     /*margin: 2em 2em;*/
     text-align: left;
     font-weight: 600;
@@ -151,42 +151,58 @@ textarea {
     margin: auto;
     padding: 10vh 0;
 }
+
 #contact-extra h3 {
     font-size: var(--header-size);
     font-weight: var(--header-weight);
 }
+
 #contact-extra p {
     font-size: var(--paragraph-size);
 }
-#phoneNumber, #email {
+
+#phoneNumber,
+#email {
     color: var(--header-color);
     text-decoration: none;
 }
-#phoneNumber:hover, #email:hover {
+
+#phoneNumber:hover,
+#email:hover {
     color: var(--secondary-color);
     text-decoration: none;
 }
-.body-number, .body-email, .body-text {
+
+.body-number,
+.body-email,
+.body-text {
     margin: 1em 0;
     font-size: var(--paragraph-size);
 }
+
 #contact-extra div {
     margin: 1em auto;
     margin: 5vh 10vw;
 }
+
 #contactSection {
     display: none;
 }
-#extra1 a, #extra2 a {
-    color:var(--header-color);
+
+#extra1 a,
+#extra2 a {
+    color: var(--header-color);
     font-weight: var(--header-weight);
 
 }
-#extra1 a:hover, #extra2 a:hover {
-    color:var(--secondary-color);
+
+#extra1 a:hover,
+#extra2 a:hover {
+    color: var(--secondary-color);
     text-decoration: none;
 
 }
+
 @media only screen and (max-width: 918px) {
     #contactHeader {
         padding: 10vh 0;
@@ -205,6 +221,7 @@ textarea {
         z-index: 1;
         /* Ensure the overlay is behind the text */
     }
+
     #contactHeader a {
         bottom: 20px;
     }
@@ -226,11 +243,13 @@ textarea {
 
     .card {
         margin-top: 2em;
-        height:auto;
+        height: auto;
     }
+
     #contact-extra {
         padding: 1vh 1rem;
     }
+
     #contact-extra div {
         margin: 5vh 1rem;
     }

@@ -159,22 +159,7 @@ body {
     font-size: var(--paragraph-size);
 }
 
-#Section6 {
-    background-color: var(--primary-color);
-    height: auto;
-    padding: 4vh 20vw;
-}
 
-#Section6 h1 {
-    color: var(--secondary-color);
-    font-size: var(--header-size);
-    font-weight: var(--header-weight);
-    margin: 0 auto 1em;
-}
-
-#Section6 p {
-    font-size: var(--paragraph-size);
-}
 
 @media (prefers-reduced-motion: no-preference) {
     figcaption {
