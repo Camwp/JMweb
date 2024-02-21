@@ -11,7 +11,7 @@
     margin-top: 1em;
 }
 
-#section{
+#section {
     padding: 0 5em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -30,20 +30,24 @@
     padding: 1em;
     padding-left: 0;
 }
+
 #left-content p {
     font-size: var(--paragraph-size);
 }
+
 #left-content li {
-    padding: 1em;    
+    padding: 1em;
     padding-left: 0;
     column-span: 1fr;
     font-size: 18px;
     color: var(--secondary-color);
     font-weight: 600;
 }
+
 #left-content li a {
     color: var(--header-color);
 }
+
 #right-content {
     display: flex;
     align-items: center;
@@ -68,6 +72,7 @@
     color: var(--secondary-color);
     font-weight: var(--header-weight);
 }
+
 #section h3 {
     font-family: var(--primary-font), Arial;
     color: var(--paragraph-color);
@@ -93,18 +98,29 @@
     transform: translate(-50%, -50%);
     z-index: 1000;
     background-color: white;
-    padding: 20px;
+    padding: 20px 5px 5px 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 40%;
+    width: 50vw;
     max-width: 80%;
     max-height: 80%;
     border-radius: 8px;
 }
+
 #mapContainer {
-    height: 35vh; /* Set your desired height */
+    height: 40vh;
+    /* Set your desired height */
     width: 100%;
     padding-top: 1.5em;
 }
+
+#mapModal h2 {
+    position: absolute;
+    top: 10px;
+    font-size: 22px;
+    color: var(--header-color);
+    left: 15px;
+}
+
 .closeIcon {
     position: absolute;
     top: 0px;
@@ -114,20 +130,24 @@
     font-size: var(--header-size);
     color: var(--header-color);
 }
+
 @media only screen and (max-width:918px) {
     #templateHeader {
         height: 25px;
     }
+
     #mapModal {
         max-width: 85%;
         width: 85%;
     }
+
     #section {
         display: block;
         height: auto;
         text-align: center;
         padding: 10px;
     }
+
     #section h2 {
         font-size: 2rem;
     }
@@ -135,19 +155,28 @@
     #left-content ul {
         width: 100%;
     }
+
     #left-content li {
         padding-left: 1em
     }
+
     #right-content img {
         max-width: 90vw;
     }
+
     .section2 {
         height: auto;
         background-color: var(--highlight-color);
         text-align: center;
-        
+
     }
-    
+
+    #mapModal h2 {
+        font-size: 16px;
+        top: 5px;
+        margin-right: 2em;
+    }
+
     .section3 {
         height: auto;
         background-color: var(--primary-color);

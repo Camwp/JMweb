@@ -184,6 +184,10 @@ ul li i:after {
   /* Adjust centering vertically */
 }
 
+hr {
+  padding: 1em 0;
+}
+
 #industries {
 
   padding: 4vh 20vw;

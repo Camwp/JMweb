@@ -134,6 +134,16 @@ body {
     font-size: var(--paragraph-size);
 }
 
+#Section2 button {
+    padding: .5em 2em;
+    background-color: var(--header-color);
+    border-width: 0px;
+}
+
+#Section2 button a {
+    color: var(--primary-color);
+    font-weight: var(--header-weight);
+}
 
 
 
@@ -159,6 +169,16 @@ body {
     font-size: var(--paragraph-size);
 }
 
+#Section3 button {
+    padding: .5em 2em;
+    background-color: var(--primary-color);
+    border-width: 0px;
+}
+
+#Section3 button a {
+    color: var(--header-color);
+    font-weight: var(--header-weight);
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -219,7 +239,7 @@ body {
     }
 
     #Section2 {
-        padding: 5vh 5vw;
+        padding: 5vh 10vw;
     }
 
     #Section3 {
