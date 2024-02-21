@@ -3,7 +3,7 @@
 
 :root {
     /* FONTS */
-    --primary-font: 'Poppins'; 
+    --primary-font: 'Poppins';
     --header-size: 32px;
     --paragraph-size: 18px;
     --header-weight: 600;
@@ -14,7 +14,8 @@
     /* BLUE */
     --highlight-color: #F3EFEF;
     /* LIGHT GREY */
-    --header-color: #3d728c; /* FOOTER COLOR */
+    --header-color: #3d728c;
+    /* FOOTER COLOR */
     /* MOON STONE */
     --paragraph-color: #242424;
 }
@@ -36,9 +37,11 @@ header {
     height: 100px;
     top: 0px;
 }
+
 header.nav-shrink {
     height: 65px;
 }
+
 .navsec {
     text-align: center;
     padding: 1em;
@@ -46,18 +49,21 @@ header.nav-shrink {
     width: 100%;
     margin: 0 20px;
 }
+
 nav {
     display: flex;
     align-items: center;
     margin-left: auto;
     max-width: 1000px
 }
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
+
 nav li {
     margin-right: 20px;
     display: flex;
@@ -66,9 +72,11 @@ nav li {
     height: 10px;
     padding-right: 20px;
 }
+
 nav li:last-child {
     border-right: 0
 }
+
 nav a {
     text-decoration: none;
     border-width: 0;
@@ -80,14 +88,18 @@ nav a {
     align-items: center;
     padding: 1em 0;
 }
+
 nav a:hover {
     color: #5595b3;
     background-color: #ffffff;
     text-decoration: none;
 }
+
 nav a.active {
     color: #050505;
 }
+
+/*
 .dropdown {
     position: relative;
 }
@@ -99,11 +111,9 @@ nav a.active {
     z-index: 1;
     margin-top: 7px;
     top: 100%;
-    /* Position dropdown below the parent li */
     border-top: 2px solid var(--secondary-color);
-    /* Match the border style of nav li */
-    padding: 0 5px; /* Adjust the padding as needed */
-    width: 15em;   /* Adjust the width as needed */
+    padding: 0 5px; 
+    width: 15em;   
     right: -2.5em;
     border-radius: 2px;
 }
@@ -119,27 +129,25 @@ nav a.active {
 }
 .dropbtn:after {
     content: "\25BC";
-    /* Unicode character for downward triangle */
     margin-left: 5px;
     font-size: 12px;
     color: var(--header-color);
-    /* Use your secondary color */
 }
 .dropdown-content:after {
     content: "";
     position: absolute;
     top: -12px;
     left: calc(60% + 18px);
-    /* Center the triangle */
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #ffffff transparent;
-    /* Match the background color */
-}
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent #ffffff transparent;
+}*/
+
 .navsec hr {
     padding: 0;
     margin: 0;
 }
+
 .iconlogo {
     margin-left: 10px
 }
@@ -167,13 +175,15 @@ body {
     overflow: hidden;
     padding-top: 20vh;
 }
+
 #img-Header p {
     position: relative;
     z-index: 5;
-    bottom: 2em;
+    bottom: 1em;
     margin-left: 3em;
-    
+
 }
+
 #header-border {
     position: relative;
     z-index: 10;
@@ -181,6 +191,7 @@ body {
     min-width: 932px;
     top: 12px;
 }
+
 #header-info {
     background-color: var(--primary-color);
     height: auto;
@@ -189,11 +200,13 @@ body {
     text-align: center;
     font-size: var(--header-size);
     color: var(--secondary-color);
-    
+
 }
+
 #header-info h3 {
     font-weight: var(--header-weight);
 }
+
 #header-info p {
     font-size: var(--paragraph-size);
     color: var(--header-color);
@@ -208,76 +221,84 @@ body {
     height: auto;
     padding: 4vh 20vw;
     margin: 0px 0;
-    padding-bottom: 10em;
+
 }
+
 #gallery-section h1 {
     color: var(--secondary-color);
     font-size: var(--header-size);
     font-weight: var(--header-weight);
-    margin-bottom: 1em ;
+    margin-bottom: 1em;
 }
+
 .gallery img {
-	width: 100%;
-	display: block;
-	aspect-ratio: 1.25 / 1;
-	object-fit: cover;
-	transition: transform 1000ms;
+    width: 100%;
+    display: block;
+    aspect-ratio: 1.25 / 1;
+    object-fit: cover;
+    transition: transform 1000ms;
 }
+
 #gallery-section ul {
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	max-width: 100%;
-	width: 100rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    max-width: 100%;
+    width: 100rem;
+
     @media (max-width: 1336px) {
-        grid-template-columns: minmax(20rem, 1fr);
+        grid-template-columns: minmax(33%, 1fr);
     }
 }
 
 figure {
-	margin: 0;
-	position: relative;
-	overflow: hidden;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
+
 figure::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200%;
-	height: 200%;
-	background: rgba(0, 0, 0, 0.5);
-	transform-origin: center;
-	opacity: 0;
-	transform: scale(2);
-	transition: opacity 300ms;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
 }
+
 figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	place-items: center;
-	text-align: center;
-	padding: 1rem;
-	color: var(--primary-color);
-	font-size: 1.2rem;
-	z-index: 1;
-	opacity: 0;
-	transition: opacity 600ms, transform 600ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 600ms, transform 600ms;
 }
+
 a:is(:hover, :focus) figure::after {
-	opacity: 1;
+    opacity: 1;
 }
+
 a:is(:hover, :focus) figcaption {
-	opacity: 1;
-	transition: opacity 600ms;
+    opacity: 1;
+    transition: opacity 600ms;
 }
 
 
@@ -288,6 +309,7 @@ a:is(:hover, :focus) figcaption {
     padding: 2em 20vw;
     text-align: center;
 }
+
 #contactSection h3 {
     color: var(--paragraph-color);
     font-size: 26px;
@@ -317,17 +339,20 @@ footer.footer {
     padding: 20px 0;
     background-color: var(--header-color);
 }
+
 .footer-content {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     align-items: end;
+
     /* Wrap content on smaller screens */
     @media (min-width: 918px) {
         padding: 0 2em;
         padding-bottom: 1em;
     }
 }
+
 .footer-left {
     width: 100%;
     text-align: center;
@@ -338,10 +363,12 @@ footer.footer {
         text-align: left;
     }
 }
+
 .footer-logo {
     width: 130px;
     filter: brightness(0) saturate(100%) invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
 }
+
 .footer-menu {
     width: 100%;
     text-align: center;
@@ -352,13 +379,17 @@ footer.footer {
         text-align: left;
     }
 }
+
 .footer-menu a {
     display: block;
     font-weight: 500;
-    text-decoration: none; /* Remove underlines on hover */
-    color: var(--primary-color); /* Set the desired text color on hover */
+    text-decoration: none;
+    /* Remove underlines on hover */
+    color: var(--primary-color);
+    /* Set the desired text color on hover */
     width: fit-content;
 }
+
 .social-items {
     width: 100%;
     text-align: center;
@@ -372,18 +403,24 @@ footer.footer {
         margin-top: 0;
     }
 }
+
 footer p {
     color: #fff;
     margin: 0;
 }
+
 footer a {
     color: #fff;
     text-decoration: none;
 }
+
 #footerNumber {
-    text-decoration: none; /* Remove underlines on hover */
-    color: var(--primary-color); /* Set the desired text color on hover */
+    text-decoration: none;
+    /* Remove underlines on hover */
+    color: var(--primary-color);
+    /* Set the desired text color on hover */
 }
+
 .social-icon {
     margin-left: 14px;
     /* Adjust the margin as needed */
@@ -405,12 +442,15 @@ footer a {
     border-bottom: 0;
     border-color: var(--secondary-color);
 }
+
 #cookieNotice h4 {
     font-size: 20px;
 }
+
 #cookieNotice p {
     font-size: 14px;
 }
+
 #closeIcon {
     right: 3em;
     position: absolute;
@@ -462,15 +502,18 @@ footer a {
         /* Place the nav behind the header */
         overflow: visible;
     }
+
     header.nav-shrink {
-        padding-top:5px;
+        padding-top: 5px;
     }
+
     nav.active {
         z-index: -1;
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
+
     nav ul {
         list-style: none;
         margin: 0;
@@ -482,12 +525,14 @@ footer a {
         margin-left: 20px;
         width: 100%;
     }
+
     nav li {
         margin-bottom: 10px;
         border-right: 0;
         padding: 10px 0;
         width: 100%;
     }
+
     nav a {
         text-decoration: none;
         width: 100%;
@@ -495,6 +540,7 @@ footer a {
         transition: color .3s;
         padding: 0;
     }
+
     .menu-toggle {
         display: block;
         position: absolute;
@@ -503,6 +549,7 @@ footer a {
         top: 50%;
         transform: translateY(-50%)
     }
+
     .menu-icon {
         padding: 1px;
         width: 30px;
@@ -516,11 +563,11 @@ footer a {
     .menu-toggle.active .menu-icon:nth-child(1) {
         transform: rotate(-45deg) translate(-2px, 10px);
     }
-    
+
     .menu-toggle.active .menu-icon:nth-child(2) {
         opacity: 0;
     }
-    
+
     .menu-toggle.active .menu-icon:nth-child(3) {
         transform: rotate(45deg) translate(-3px, -10px);
     }
@@ -529,21 +576,25 @@ footer a {
         display: block;
         margin: 0 auto
     }
+
     .navsec {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center
     }
+
     .iconlogo {
         margin-right: 10px
     }
+
     .dropdown-content {
         width: 100%;
         /* Make each item full width */
         box-sizing: border-box;
         left: 0px;
     }
+
     .dropdown-content::after {
         left: calc(60%);
     }
@@ -565,12 +616,14 @@ footer a {
         text-decoration: none;
         /* Adjust the color as needed */
     }
+
     #img-Header {
         /* going from 20vh to 10vh */
         padding-top: 10vh;
         font-size: 40px;
         text-align: center;
     }
+
     #img-Header p {
         left: 0;
         right: 0;
@@ -583,15 +636,17 @@ footer a {
     #header-border {
         top: 2px;
     }
+
     #header-info p {
         max-width: 90%;
     }
+
     #gallery-section {
         text-align: center;
         padding: 4vh 1rem;
-       }
+    }
+
     .footer-menu a {
         display: inline;
     }
 }
-

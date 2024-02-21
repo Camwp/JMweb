@@ -37,40 +37,40 @@ document.addEventListener('DOMContentLoaded', function () {
 //```
 
 //Dropdown function
-$(document).ready(function () {
-    var servicesDropdown = $('.dropdown');
-    var lastClickTime = 0;
+//$(document).ready(function () {
+//    var servicesDropdown = $('.dropdown');
+//    var lastClickTime = 0;
 
-    servicesDropdown.on('click', function (e) {
-        var currentTime = new Date().getTime();
-        var timeDiff = currentTime - lastClickTime;
+//    servicesDropdown.on('click', function (e) {
+//        var currentTime = new Date().getTime();
+//        var timeDiff = currentTime - lastClickTime;
 
-        if (window.innerWidth <= 768) {
-            // Mobile view: Single click toggles dropdown
-            if (timeDiff < 10000) {
-                console.log('Mobile View - Double Click - Navigating to services.html');
-                window.location.href = 'services.html'; // Navigate to services page on double click
-            } else {
-                console.log('Mobile View - Single Click - Toggling dropdown');
-                servicesDropdown.toggleClass('active');
-            }
-        } else {
-            // Desktop view: Single click navigates to services.html, hover toggles dropdown
-            if (timeDiff = 300) {
-                console.log('Desktop View - Single Click - Navigating to services.html');
-                window.location.href = 'services.html'; // Navigate to services page on single click
-            } else {
-                console.log('Desktop View - Hover - Toggling dropdown');
-                servicesDropdown.toggleClass('active');
-            }
-        }
+//        if (window.innerWidth <= 768) {
+// Mobile view: Single click toggles dropdown
+//            if (timeDiff < 10000) {
+//                console.log('Mobile View - Double Click - Navigating to services.html');
+//                window.location.href = 'services.html'; // Navigate to services page on double click
+//            } else {
+//                console.log('Mobile View - Single Click - Toggling dropdown');
+//                servicesDropdown.toggleClass('active');
+//            }
+//        } else {
+//            // Desktop view: Single click navigates to services.html, hover toggles dropdown
+//            if (timeDiff = 300) {
+//                console.log('Desktop View - Single Click - Navigating to services.html');
+//                window.location.href = 'services.html'; // Navigate to services page on single click
+//            } else {
+//                console.log('Desktop View - Hover - Toggling dropdown');
+//                servicesDropdown.toggleClass('active');
+//            }
+//        }
 
-        lastClickTime = currentTime;
-    });
+//        lastClickTime = currentTime;
+//    });
 
-    $(document).on('click', function (e) {
-        if (!$(e.target).closest('.dropdown').length) {
-            servicesDropdown.removeClass('active');
-        }
-    });
-});
+//    $(document).on('click', function (e) {
+//        if (!$(e.target).closest('.dropdown').length) {
+//            servicesDropdown.removeClass('active');
+//        }
+//    });
+//});
