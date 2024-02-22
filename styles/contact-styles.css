@@ -165,15 +165,14 @@ textarea {
 }
 
 #phoneNumber,
-#email {
-    color: inherit;
+#emailCard {
     color: var(--header-color) !important;
     text-decoration: none;
 }
 
 #phoneNumber:hover,
-#email:hover {
-    color: var(--secondary-color);
+#emailCard:hover {
+    color: var(--secondary-color) !important;
     text-decoration: none;
 }
 
