@@ -166,7 +166,8 @@ textarea {
 
 #phoneNumber,
 #email {
-    color: var(--header-color);
+    color: inherit;
+    color: var(--header-color) !important;
     text-decoration: none;
 }
 
