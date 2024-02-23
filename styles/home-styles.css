@@ -135,14 +135,18 @@ body {
 }
 
 #Section2 button {
-    padding: .5em 2em;
+    padding: .5em 0;
     background-color: var(--header-color);
     border-width: 0px;
 }
 
-#Section2 button a {
-    color: var(--primary-color);
+#Section2 a {
+    color: var(--header-color);
     font-weight: var(--header-weight);
+    
+}
+#Section2 a:hover {
+    text-decoration: none;
 }
 
 
@@ -170,14 +174,18 @@ body {
 }
 
 #Section3 button {
-    padding: .5em 2em;
+    padding: .5em 0;
     background-color: var(--primary-color);
     border-width: 0px;
 }
 
-#Section3 button a {
-    color: var(--header-color);
+#Section3 a {
+    color: var(--primary-color);
     font-weight: var(--header-weight);
+    text-decoration: none;
+}
+#Section3 a:hover {
+    text-decoration: none;
 }
 
 
