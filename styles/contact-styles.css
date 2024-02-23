@@ -170,7 +170,7 @@ textarea {
 
 }
 
-#successMessage {
+#successBtnMessage {
     color: var(--header-color);
     font-weight: bold;
     grid-column: span 2;

@@ -101,7 +101,7 @@
                 -->
 
                 <button type="button" class="submit_button" id="submitBtn">Submit</button>
-                <div id="successMessage" class="hidden">Form submitted successfully!</div>
+                <div id="successBtnMessage" class="hidden">Form submitted successfully!</div>
             </form>
             <div class="card">
                 <hr>
@@ -193,12 +193,12 @@
                 success: function (response) {
                     // Display success message or handle the response
                     //alert('Form submitted successfully!');
-                    $('#successMessage').removeClass('hidden');
+                    $('#successBtnMessage').removeClass('hidden');
                 },
                 error: function (error) {
                     // Handle errors
                     console.error('Error submitting form:', error);
-                    $('#successMessage').removeClass('hidden');
+                    $('#successBtnMessage').removeClass('hidden');
                     //alert('Form submitted successfully!');
                 }
             });
