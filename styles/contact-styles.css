@@ -164,6 +164,18 @@ textarea {
     font-size: var(--paragraph-size);
 }
 
+/* Add your styles here */
+.hidden {
+    display: none;
+
+}
+
+#successMessage {
+    color: var(--header-color);
+    font-weight: bold;
+    grid-column: span 2;
+}
+
 #phoneNumber,
 #emailCard {
     color: var(--header-color) !important;

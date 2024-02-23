@@ -101,6 +101,7 @@
                 -->
 
                 <button type="button" class="submit_button" id="submitBtn">Submit</button>
+                <div id="successMessage" class="hidden">Form submitted successfully!</div>
             </form>
             <div class="card">
                 <hr>
@@ -191,12 +192,14 @@
                 data: $('#contactForm').serialize(), // Serialize form data
                 success: function (response) {
                     // Display success message or handle the response
-                    alert('Form submitted successfully!');
+                    //alert('Form submitted successfully!');
+                    $('#successMessage').removeClass('hidden');
                 },
                 error: function (error) {
                     // Handle errors
                     console.error('Error submitting form:', error);
-                    alert('Form submitted successfully!');
+                    $('#successMessage').removeClass('hidden');
+                    //alert('Form submitted successfully!');
                 }
             });
         });
