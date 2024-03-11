@@ -5,8 +5,8 @@
 }
 
 #our-services .transition,
-#our-services ul li i:before,
-#our-services ul li i:after,
+#our-services #mainDropdownUL #mainDropdownLI i:before,
+#our-services #mainDropdownUL #mainDropdownLI i:after,
 #our-services p {
   transition: all 0.25s ease-in-out;
 }
@@ -16,7 +16,7 @@
 }
 
 #our-services .flipIn,
-#our-services ul li,
+#our-services #mainDropdownUL #mainDropdownLI,
 #our-services h1 {
   animation: flipdown 0.5s ease both;
 }
@@ -79,55 +79,57 @@ h2 {
   color: var(--header-color);
 }
 
-#our-services ul {
+#our-services #mainDropdownUL {
   list-style: none;
   perspective: 900;
   padding: 0;
   margin: 0;
 }
 
-#our-services ul li {
+#our-services #mainDropdownUL #mainDropdownLI {
   position: relative;
   padding: 0;
   margin: 0;
   padding-bottom: 4px;
   padding-top: 18px;
   border-top: 1px dotted #dce7eb;
+  max-height: 75px;
 }
 
-#our-services ul li:nth-of-type(1) {
+#our-services #mainDropdownUL #mainDropdownLI:nth-of-type(1) {
   animation-delay: 0.5s;
 }
 
-#our-services ul li:nth-of-type(2) {
+#our-services #mainDropdownUL #mainDropdownLI:nth-of-type(2) {
   animation-delay: 0.75s;
 }
 
-#our-services ul li:nth-of-type(3) {
+#our-services #mainDropdownUL #mainDropdownLI:nth-of-type(3) {
   animation-delay: 1s;
 }
 
-#our-services ul li:nth-of-type(4) {
+#our-services #mainDropdownUL #mainDropdownLI:nth-of-type(4) {
   animation-delay: 1.25s;
 }
 
-#our-services ul li:nth-of-type(5) {
+#our-services #mainDropdownUL #mainDropdownLI:nth-of-type(5) {
   animation-delay: 1.5s;
 }
 
-#our-services ul li:last-of-type {
+#our-services #mainDropdownUL #mainDropdownLI:last-of-type {
   padding-bottom: 0;
 }
 
-#our-services ul li i {
+#our-services #mainDropdownUL #mainDropdownLI i {
   position: absolute;
   transform: translate(-6px, 0);
   margin-top: 16px;
   right: 0;
+  
 }
 
-#our-services ul li i:before,
-ul li i:after {
+#our-services #mainDropdownUL #mainDropdownLI i:before,
+#mainDropdownUL #mainDropdownLI i:after {
   content: "";
   position: absolute;
   background-color: var(--secondary-color);
@@ -135,15 +137,15 @@ ul li i:after {
   height: 9px;
 }
 
-#our-services ul li i:before {
+#our-services #mainDropdownUL #mainDropdownLI i:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
 
-#our-services ul li i:after {
+#our-services #mainDropdownUL #mainDropdownLI i:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
 
-#our-services ul li input[type=checkbox] {
+#our-services #mainDropdownUL #mainDropdownLI input[type=checkbox] {
   position: absolute;
   cursor: pointer;
   width: 100%;
@@ -152,20 +154,28 @@ ul li i:after {
   opacity: 0;
 }
 
-#our-services ul li input[type=checkbox]:checked~p {
+#our-services #mainDropdownUL #mainDropdownLI input[type=checkbox]:checked~p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
   transform: translate(0, 50%);
 }
 
-#our-services ul li input[type=checkbox]:checked~i:before {
+#our-services #mainDropdownUL #mainDropdownLI input[type=checkbox]:checked~i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
 
-#our-services ul li input[type=checkbox]:checked~i:after {
+#our-services #mainDropdownUL #mainDropdownLI input[type=checkbox]:checked~i:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
+#bulletList::before {
+  content:"• "
+}
+#bulletList {
+  font-size: 16px;
+  margin-left: 1.5rem;
+}
+
 
 
 #split-image {
@@ -187,7 +197,6 @@ ul li i:after {
 hr {
   padding: 1em 0;
 }
-
 #industries {
 
   padding: 4vh 20vw;
@@ -301,7 +310,7 @@ hr {
   }
 
   #our-services p {
-    padding: 0 10vw;
+    padding: 0 2vw;
   }
 
   #industries {
